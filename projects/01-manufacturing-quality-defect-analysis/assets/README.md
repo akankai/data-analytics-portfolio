@@ -1,5 +1,7 @@
 # Dashboard Asset
 
-The folder contains the final Power BI dashboard screenshot used to present the project results.
+Final Power BI dashboard screenshot for the **Manufacturing Quality & Defect Analysis** project.
 
-**Dashboard:** `manufacturing-quality-dashboard.jpg`
+![Manufacturing Quality Dashboard](manufacturing-quality-dashboard.png)
+
+[Open the dashboard image](manufacturing-quality-dashboard.png)
