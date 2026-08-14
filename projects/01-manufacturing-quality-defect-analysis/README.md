@@ -20,7 +20,9 @@ The objective is not only to report how many defects occurred, but to determine 
 
 The project uses a synthetic batch-level manufacturing dataset supplied as an uncleaned Excel workbook.
 
-The uploaded workbook contains **460 production records** and the following fields:
+The uploaded workbook contains **460 production records** and 12 variables. The complete source workbook is documented in [`data/`](data/) and was inspected for missing values and data types.
+
+Main fields:
 
 | Field | Description |
 |---|---|
@@ -56,7 +58,7 @@ The DAX definitions are documented in [`power-bi/dax-measures.md`](power-bi/dax-
 
 ## 5. Power BI Dashboard
 
-The dashboard contains:
+The current Power BI report contains:
 
 - KPI cards for production, good units, defects, and defect rate.
 - Monthly defect-rate trend.
@@ -72,23 +74,23 @@ The dashboard contains:
 
 ### Overall performance
 
-The dashboard currently reports approximately **232.15K units produced**, **228.32K good units**, **3.82K defects**, and a **1.65% defect rate** for the report view.
+The current dashboard view reports approximately **232.15K units produced**, **228.32K good units**, **3.82K defects**, and a **1.65% defect rate**.
 
-The monthly trend shows a slight improvement from May through July, with the defect rate falling from roughly 1.66% to 1.57% in the dashboard view.
+The monthly trend in the dashboard shows a slight improvement from May through July, with the defect rate falling from roughly 1.66% to 1.57%.
 
 ### Product performance
 
-Product defect rates are relatively close to one another. Noir Extrême appears among the highest-performing-risk products in the dashboard, while Noir Light has the lowest defect rate.
+Product defect rates are relatively close to one another. The dashboard places Noir Extrême among the higher defect-rate products and Noir Light among the lower ones.
 
 The important analytical lesson is that a product having a higher fat percentage does **not** by itself demonstrate that fat is causing defects. The fat-versus-defect-rate scatter plot does not show a clear monotonic relationship.
 
 ### Machine performance
 
-M03 is the main machine requiring investigation. In the dashboard comparison it has the highest overall defect rate at approximately **1.84%**, compared with approximately **1.59% for M01** and **1.52% for M02**.
+M03 is the main machine requiring investigation. In the current dashboard comparison it has the highest overall defect rate at approximately **1.84%**, compared with approximately **1.59% for M01** and **1.52% for M02**.
 
-More importantly, M03 shows the highest defect rate for most products in the machine/product matrix. This makes the M03 signal more meaningful than simply observing that M03 has the highest aggregate defect rate.
+The dashboard's machine/product matrix shows M03 performing worse for most products. In the complete uploaded source workbook, M03 is also the highest-rate machine for every product, which strengthens the case for investigating M03. This difference is useful because it exposes an important portfolio-quality issue: **the PBIX report and the full source workbook should be synchronized before final publication**.
 
-However, the analysis does **not** claim that M03 causes the defects. Machine condition, calibration, operating conditions, product mix, and other process variables still need to be investigated.
+The analysis does **not** claim that M03 causes the defects. Machine condition, calibration, operating conditions, product mix, and other process variables still need to be investigated.
 
 ### Process parameters
 
@@ -107,13 +109,14 @@ The exploratory scatter plots show:
 4. **Do not target fat, viscosity, or fineness as root causes based only on visual correlation.**
 5. **Continue monitoring the monthly defect rate** to determine whether the recent improvement is sustained.
 6. **Collect additional operational variables** such as temperature, maintenance events, shift, raw-material lot, and machine settings for a stronger root-cause analysis.
+7. **Synchronize the PBIX model with the complete source workbook** before publishing final KPI numbers.
 
 ## 8. Limitations
 
 - The dataset is synthetic and intended for portfolio demonstration.
-- The current analysis is observational; it cannot establish causation.
+- The analysis is observational; it cannot establish causation.
 - Some process variables may be correlated with product type, creating potential confounding.
-- The dashboard view and source workbook should be kept synchronized before publishing final KPI figures.
+- The current PBIX dashboard appears to use a report view/subset that does not match the complete 460-row workbook totals. Final published figures should therefore be recalculated after refreshing the Power BI model from the source workbook.
 
 ## 9. Tools
 
@@ -127,3 +130,5 @@ The exploratory scatter plots show:
 - `power-bi/` — Power BI documentation and DAX measures.
 - `analysis/` — methodology, findings, and recommendations.
 - `assets/` — dashboard screenshots and presentation visuals.
+
+The working PBIX and source Excel are also associated with the Project 01 GitHub release.
