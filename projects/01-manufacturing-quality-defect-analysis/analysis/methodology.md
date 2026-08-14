@@ -2,7 +2,7 @@
 
 ## 1. Business framing
 
-The analysis starts from a manufacturing quality question: how can production data be used to understand defects and identify where quality-control efforts should focus?
+The analysis starts with a manufacturing quality question: how can production data be used to understand defects and identify where quality-control attention should be focused?
 
 ## 2. Data validation
 
@@ -10,11 +10,11 @@ The source workbook was checked for:
 
 - Missing values
 - Duplicate rows
-- Numeric field consistency
+- Numeric-field consistency
 - Production and defect totals
 - Plausible categorical values
 
-The current synthetic dataset contains no missing values or duplicate rows.
+The synthetic dataset contains no missing values or duplicate rows.
 
 ## 3. KPI construction
 
@@ -39,10 +39,10 @@ Power BI visuals were used to examine:
 
 ## 5. Hypothesis-driven analysis
 
-Rather than assuming that a high measurement causes defects, the analysis tests visual evidence and compares groups before drawing conclusions.
+The analysis does not assume that a high measurement causes defects. Instead, it compares groups and checks whether patterns remain visible after segmentation.
 
-For example, M03 was identified as a machine requiring investigation, but the analysis deliberately avoids claiming that M03 causes defects without statistical validation.
+For example, M03 was identified as an investigation priority because it has the highest overall defect rate and the highest rate for most products. The analysis stops short of calling M03 a causal factor because the available data does not contain enough operational information or statistical testing to establish causality.
 
-## 6. Future statistical validation
+## 6. Interpretation boundaries
 
-The next phase will use Python to calculate correlations and perform appropriate statistical tests. Where multiple explanatory variables are involved, multivariate analysis can be used to reduce confounding effects.
+The final conclusions are intentionally limited to what the dataset supports. Exploratory relationships are presented as signals for investigation rather than proven root causes.
