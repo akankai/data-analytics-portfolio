@@ -1,36 +1,34 @@
 # Power BI Dashboard
 
-## Dashboard purpose
+## Purpose
 
-The dashboard summarizes manufacturing quality performance and provides an interactive way to investigate where defects are concentrated.
+The dashboard summarizes manufacturing quality performance and helps identify where defect rates are concentrated.
 
 ## KPI cards
 
-- **Total Production:** 532,362
-- **Good Units:** 523,673
-- **Total Defects:** 8,689
-- **Defect Rate:** 1.63%
+| KPI | Result |
+|---|---:|
+| Total Production | **532,362** |
+| Good Units | **523,673** |
+| Total Defects | **8,689** |
+| Defect Rate | **1.63%** |
 
-## Visuals
+## Analysis views
 
 ### Defect Rate by Month
-
-Shows how the defect rate changes across the production period.
+Shows the evolution of the defect rate across the production period.
 
 ### Defect Rate by Machine
-
-Compares M01, M02 and M03. M03 currently has the highest rate.
+Compares M01, M02 and M03. M03 records the highest overall defect rate in the dataset.
 
 ### Defect Rate by Product
+Compares quality performance across the five chocolate products. Noir Extrême records the highest product-level defect rate in the dashboard.
 
-Compares quality performance across the five products.
+### Quality-parameter analysis
+Scatter plots compare defect rate with humidity, fat percentage, viscosity and fineness. These visuals are exploratory and are not treated as proof of causation.
 
-### Quality-parameter scatter plots
+## Dashboard design
 
-Scatter plots are used for exploratory analysis of defect rate against humidity, fat percentage, viscosity and fineness.
+The page follows a simple analytical flow:
 
-## Design principle
-
-The dashboard is structured from **what happened → where it happened → what might explain it**.
-
-This makes it suitable for communicating both operational KPIs and analytical investigation.
+**Overall performance → Where quality issues are concentrated → Potential factors to investigate.**
