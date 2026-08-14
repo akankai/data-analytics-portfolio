@@ -1,14 +1,12 @@
-# Power BI
+# Power BI Dashboard
 
-## Dashboard
+The dashboard is the main presentation layer for the project. It combines operational KPIs with exploratory quality analysis.
 
-The Power BI report is the main presentation layer for this project.
+## Questions answered
 
-The dashboard is designed around three questions:
-
-1. **What happened?** — KPI cards and monthly defect-rate trend.
-2. **Where is it happening?** — product and machine comparisons.
-3. **What might explain it?** — quality-parameter scatter plots and machine/product analysis.
+1. **What happened?** — Production volume, good units, defects and overall defect rate.
+2. **Where is quality performance weakest?** — Monthly trend, product comparison and machine comparison.
+3. **What factors are worth investigating?** — Relationships between defect rate and humidity, fat percentage, viscosity and fineness.
 
 ## Main visuals
 
@@ -19,12 +17,9 @@ The dashboard is designed around three questions:
 - Defect Rate by Month
 - Defect Rate by Machine
 - Defect Rate by Product
-- Defect Rate by Humidity
-- Defect Rate by Fat
-- Defect Rate by Viscosity
-- Defect Rate by Fineness
-- Machine × Product comparison matrix
+- Defect Rate vs Humidity
+- Defect Rate vs Fat Percentage
+- Defect Rate vs Viscosity
+- Defect Rate vs Fineness
 
-## Publishing note
-
-The `.pbix` report should be opened with Power BI Desktop. Screenshots can be placed in `assets/` so the project remains easy to review directly from GitHub.
+The final dashboard screenshot is available in [`../assets/manufacturing-quality-dashboard.jpg`](../assets/manufacturing-quality-dashboard.jpg).
