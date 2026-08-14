@@ -74,7 +74,11 @@ The Power BI dashboard follows three analytical questions:
 
 **What might explain it?** — Exploratory analysis of humidity, fat percentage, viscosity and fineness.
 
-![Manufacturing Quality Dashboard](assets/manufacturing-quality-dashboard.jpg)
+## Dashboard Preview
+
+![Manufacturing Quality Dashboard](assets/Screenshot%202026-08-14%20174941.png)
+
+*Power BI dashboard — production and quality performance overview.*
 
 ## Key findings
 
