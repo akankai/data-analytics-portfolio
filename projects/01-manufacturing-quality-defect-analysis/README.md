@@ -1,134 +1,128 @@
 # Project 01 — Manufacturing Quality & Defect Analysis
 
-## 1. Business Problem
+## Business Problem
 
-A chocolate manufacturing company wants to understand its production quality performance after management noticed persistent defects in finished production.
+A chocolate manufacturing company wants to understand its production quality performance and investigate the factors associated with defective production.
 
-The objective is not only to report how many defects occurred, but to determine **where quality problems are concentrated and which production factors deserve further investigation**.
+## Objectives
 
-## 2. Objectives
+- Measure production and quality performance.
+- Track the defect rate over time.
+- Compare quality performance across products and machines.
+- Investigate relationships between quality parameters and defects.
+- Identify production areas that require further investigation.
+- Provide data-driven recommendations to management.
 
-- Monitor production and quality KPIs.
-- Track defect-rate evolution over time.
-- Compare defect rates across products and machines.
-- Investigate relationships between defects and process-quality measurements.
-- Compare machine performance within each product to avoid misleading aggregate conclusions.
-- Produce a management-oriented Power BI dashboard.
-- Formulate evidence-based recommendations without confusing correlation with causation.
+## Dataset
 
-## 3. Dataset
-
-The project uses a synthetic batch-level manufacturing dataset supplied as an uncleaned Excel workbook.
-
-The uploaded workbook contains **460 production records** and 12 variables. The complete source workbook is documented in [`data/`](data/) and was inspected for missing values and data types.
+The project uses a batch-level synthetic manufacturing dataset containing **460 production records**.
 
 Main fields:
 
-| Field | Description |
-|---|---|
-| Date | Production date |
-| Product | Chocolate product |
-| Batch | Unique production batch |
-| Production_Qty | Units produced |
-| Defects | Defective units |
-| Humidity_pct | Product humidity (%) |
-| Fat_pct | Fat content (%) |
-| Viscosity | Viscosity measurement |
-| Fineness_um | Particle fineness (µm) |
-| Production_Time_h | Production duration (hours) |
-| Operator | Production operator |
-| Machine | Machine used |
+- Date
+- Product
+- Batch
+- Production quantity
+- Defects
+- Humidity
+- Fat percentage
+- Viscosity
+- Fineness
+- Production time
+- Operator
+- Machine
 
-See [`data/data-dictionary.md`](data/data-dictionary.md) for the full data dictionary.
+## KPI Definitions
 
-## 4. KPIs
+The dashboard uses the following core KPIs:
 
-The dashboard uses four core KPIs:
+| KPI | Definition | Full-dataset result |
+|---|---|---:|
+| **Total Production** | Sum of all units produced | **532,362** |
+| **Good Units** | Total Production − Total Defects | **523,673** |
+| **Total Defects** | Sum of defective units | **8,689** |
+| **Defect Rate** | Total Defects ÷ Total Production | **1.63%** |
 
-- **Total Production** — total units produced.
-- **Good Units** — production minus defective units.
-- **Total Defects** — total defective units.
-- **Defect Rate** — the primary quality KPI.
+> These values are calculated from the complete 460-row source workbook. The earlier dashboard version displayed a smaller subset of the data, so its KPI cards were not representative of the full dataset.
 
-### Main KPI
+### DAX Measures
 
-`Defect Rate = Total Defects / Total Production`
+```DAX
+Total Production = SUM(Production_Data[Production_Qty])
 
-The DAX definitions are documented in [`power-bi/dax-measures.md`](power-bi/dax-measures.md).
+Total Defects = SUM(Production_Data[Defects])
 
-## 5. Power BI Dashboard
+Good Units = [Total Production] - [Total Defects]
 
-The current Power BI report contains:
+Defect Rate = DIVIDE([Total Defects], [Total Production], 0)
+```
 
-- KPI cards for production, good units, defects, and defect rate.
-- Monthly defect-rate trend.
-- Defect rate by machine.
-- Defect rate by product.
-- Defect rate versus humidity.
-- Defect rate versus fat percentage.
-- Defect rate versus viscosity.
-- Defect rate versus fineness.
-- Machine/product comparison matrix.
+Format **Defect Rate** as a percentage.
 
-## 6. Analysis & Findings
+## Dashboard
 
-### Overall performance
+The Power BI dashboard is designed around three analytical layers:
 
-The current dashboard view reports approximately **232.15K units produced**, **228.32K good units**, **3.82K defects**, and a **1.65% defect rate**.
+### 1. Overall performance
 
-The monthly trend in the dashboard shows a slight improvement from May through July, with the defect rate falling from roughly 1.66% to 1.57%.
+- Total Production
+- Good Units
+- Total Defects
+- Defect Rate
 
-### Product performance
+### 2. Where are quality issues concentrated?
 
-Product defect rates are relatively close to one another. The dashboard places Noir Extrême among the higher defect-rate products and Noir Light among the lower ones.
+- Defect Rate by Month
+- Defect Rate by Product
+- Defect Rate by Machine
 
-The important analytical lesson is that a product having a higher fat percentage does **not** by itself demonstrate that fat is causing defects. The fat-versus-defect-rate scatter plot does not show a clear monotonic relationship.
+### 3. What factors may be associated with defects?
+
+- Defect Rate vs Humidity
+- Defect Rate vs Fat Percentage
+- Defect Rate vs Viscosity
+- Defect Rate vs Fineness
+- Machine/Product comparison
+
+## Key Findings So Far
 
 ### Machine performance
 
-M03 is the main machine requiring investigation. In the current dashboard comparison it has the highest overall defect rate at approximately **1.84%**, compared with approximately **1.59% for M01** and **1.52% for M02**.
+M03 currently has the highest overall defect rate at approximately **1.84%**, compared with **1.59% for M01** and **1.52% for M02**.
 
-The dashboard's machine/product matrix shows M03 performing worse for most products. In the complete uploaded source workbook, M03 is also the highest-rate machine for every product, which strengthens the case for investigating M03. This difference is useful because it exposes an important portfolio-quality issue: **the PBIX report and the full source workbook should be synchronized before final publication**.
+M03 also has the highest defect rate for **4 of the 5 products** in the current dataset. This makes M03 the primary machine requiring further investigation.
 
-The analysis does **not** claim that M03 causes the defects. Machine condition, calibration, operating conditions, product mix, and other process variables still need to be investigated.
+However, the analysis does **not** establish that M03 causes the defects. The next step is to investigate operating conditions and other confounding factors.
 
-### Process parameters
+### Quality parameters
 
-The exploratory scatter plots show:
+- **Fat percentage:** no obvious positive relationship with defect rate.
+- **Viscosity:** no obvious linear relationship with defect rate.
+- **Fineness:** no obvious linear relationship with defect rate.
+- **Humidity:** shows a possible relationship in parts of the dataset, but requires further statistical validation before drawing a causal conclusion.
 
-- **Fat %:** no clear relationship with defect rate.
-- **Viscosity:** no clear relationship with defect rate.
-- **Fineness:** no clear relationship with defect rate.
-- **Humidity:** a possible relationship worth further statistical investigation, but not enough evidence to claim causation.
+### Important analytical principle
 
-## 7. Recommendations
+A variable being high for a product with a high defect rate does not prove that the variable causes defects. Product-level differences can create confounding relationships, so comparisons must be controlled and validated.
 
-1. **Prioritize M03 for quality investigation** — inspect calibration, maintenance history, operating conditions, and recent interventions.
-2. **Compare M03 against M01/M02 within the same product** before attributing defects to the machine itself.
-3. **Monitor humidity more closely** because the exploratory analysis suggests it may warrant further investigation.
-4. **Do not target fat, viscosity, or fineness as root causes based only on visual correlation.**
-5. **Continue monitoring the monthly defect rate** to determine whether the recent improvement is sustained.
-6. **Collect additional operational variables** such as temperature, maintenance events, shift, raw-material lot, and machine settings for a stronger root-cause analysis.
-7. **Synchronize the PBIX model with the complete source workbook** before publishing final KPI numbers.
+## Next Analysis Steps
 
-## 8. Limitations
+- Validate the Power BI model against the complete source workbook.
+- Investigate M03 operating conditions.
+- Compare machine performance within each product.
+- Examine operator and production-time effects.
+- Calculate correlations and, where appropriate, statistical tests.
+- Identify the strongest factors associated with defective production.
+- Produce final management recommendations.
 
-- The dataset is synthetic and intended for portfolio demonstration.
-- The analysis is observational; it cannot establish causation.
-- Some process variables may be correlated with product type, creating potential confounding.
-- The current PBIX dashboard appears to use a report view/subset that does not match the complete 460-row workbook totals. Final published figures should therefore be recalculated after refreshing the Power BI model from the source workbook.
+## Limitations
 
-## 9. Tools
+- The dataset is synthetic and intended for portfolio/learning purposes.
+- The analysis currently identifies associations rather than proven causal relationships.
+- Machine performance may be affected by product assignment and operating conditions.
+
+## Tools
 
 - Microsoft Excel
-- Power BI
+- Microsoft Power BI
 - DAX
-
-## 10. Project Files
-
-- `data/` — dataset documentation and data dictionary.
-- `power-bi/` — Power BI documentation and DAX measures.
-- `analysis/` — methodology, findings, and recommendations.
-- `assets/` — dashboard screenshots and presentation visuals.
-
-The working PBIX and source Excel are also associated with the Project 01 GitHub release.
