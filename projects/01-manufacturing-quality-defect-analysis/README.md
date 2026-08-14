@@ -1,40 +1,42 @@
 # Project 01 — Manufacturing Quality & Defect Analysis
 
+![Dashboard](assets/manufacturing-quality-dashboard.jpg)
+
 ## Business Problem
 
-A chocolate manufacturing company wants to understand its production quality performance and investigate the factors associated with defective production.
+A chocolate manufacturing company wants to understand production quality performance and investigate the factors associated with defective production.
+
+> **Dataset note:** This project uses synthetic data created for portfolio and learning purposes. It does not represent confidential or real company production data.
 
 ## Objectives
 
 - Measure production and quality performance.
-- Track the defect rate over time.
+- Track defect-rate evolution over time.
 - Compare quality performance across products and machines.
 - Investigate relationships between quality parameters and defects.
 - Identify production areas that require further investigation.
-- Provide data-driven recommendations to management.
+- Communicate findings through an interactive Power BI dashboard.
 
 ## Dataset
 
-The project uses a batch-level synthetic manufacturing dataset containing **460 production records**.
+The dataset contains **460 batch-level production records** covering five chocolate products.
 
-Main fields:
+| Field | Description |
+|---|---|
+| Date | Production date |
+| Product | Chocolate product |
+| Batch | Unique production batch |
+| Production_Qty | Units produced |
+| Defects | Defective units |
+| Humidity_pct | Product humidity (%) |
+| Fat_pct | Fat content (%) |
+| Viscosity | Viscosity measurement |
+| Fineness_um | Particle fineness (µm) |
+| Production_Time_h | Production duration (hours) |
+| Operator | Production operator |
+| Machine | Production machine |
 
-- Date
-- Product
-- Batch
-- Production quantity
-- Defects
-- Humidity
-- Fat percentage
-- Viscosity
-- Fineness
-- Production time
-- Operator
-- Machine
-
-## KPI Definitions
-
-The dashboard uses the following core KPIs:
+## KPIs
 
 | KPI | Definition | Full-dataset result |
 |---|---|---:|
@@ -42,8 +44,6 @@ The dashboard uses the following core KPIs:
 | **Good Units** | Total Production − Total Defects | **523,673** |
 | **Total Defects** | Sum of defective units | **8,689** |
 | **Defect Rate** | Total Defects ÷ Total Production | **1.63%** |
-
-> These values are calculated from the complete 460-row source workbook. The earlier dashboard version displayed a smaller subset of the data, so its KPI cards were not representative of the full dataset.
 
 ### DAX Measures
 
@@ -57,11 +57,9 @@ Good Units = [Total Production] - [Total Defects]
 Defect Rate = DIVIDE([Total Defects], [Total Production], 0)
 ```
 
-Format **Defect Rate** as a percentage.
-
 ## Dashboard
 
-The Power BI dashboard is designed around three analytical layers:
+The Power BI dashboard is organized into three analytical layers:
 
 ### 1. Overall performance
 
@@ -70,56 +68,89 @@ The Power BI dashboard is designed around three analytical layers:
 - Total Defects
 - Defect Rate
 
-### 2. Where are quality issues concentrated?
+### 2. Where quality issues are concentrated
 
 - Defect Rate by Month
 - Defect Rate by Product
 - Defect Rate by Machine
 
-### 3. What factors may be associated with defects?
+### 3. Potential contributing factors
 
 - Defect Rate vs Humidity
 - Defect Rate vs Fat Percentage
 - Defect Rate vs Viscosity
 - Defect Rate vs Fineness
-- Machine/Product comparison
 
-## Key Findings So Far
+## Key Findings
 
 ### Machine performance
 
-M03 currently has the highest overall defect rate at approximately **1.84%**, compared with **1.59% for M01** and **1.52% for M02**.
+**M03 has the highest overall defect rate at approximately 1.84%**, compared with 1.59% for M01 and 1.52% for M02.
 
 M03 also has the highest defect rate for **4 of the 5 products** in the current dataset. This makes M03 the primary machine requiring further investigation.
 
-However, the analysis does **not** establish that M03 causes the defects. The next step is to investigate operating conditions and other confounding factors.
+However, the analysis does **not** establish that M03 causes the defects. Machine performance can be influenced by product assignment and operating conditions.
+
+### Product performance
+
+Noir Extrême shows the highest product-level defect rate in the current dashboard, while Noir Light shows the lowest.
+
+A high value in one product parameter should not automatically be interpreted as a cause. Product-level differences can create confounding relationships between quality measurements and defects.
 
 ### Quality parameters
 
 - **Fat percentage:** no obvious positive relationship with defect rate.
 - **Viscosity:** no obvious linear relationship with defect rate.
 - **Fineness:** no obvious linear relationship with defect rate.
-- **Humidity:** shows a possible relationship in parts of the dataset, but requires further statistical validation before drawing a causal conclusion.
+- **Humidity:** shows a possible relationship in parts of the dataset, but further statistical validation is required before drawing a causal conclusion.
 
-### Important analytical principle
+## Analytical Approach
 
-A variable being high for a product with a high defect rate does not prove that the variable causes defects. Product-level differences can create confounding relationships, so comparisons must be controlled and validated.
+The project followed a practical analyst workflow:
 
-## Next Analysis Steps
+1. Define the business problem.
+2. Inspect and understand the production dataset.
+3. Build core DAX KPIs.
+4. Explore quality performance over time.
+5. Compare products and machines using normalized defect rates.
+6. Investigate potential relationships between quality parameters and defects.
+7. Drill down into machine/product combinations to avoid misleading aggregate conclusions.
+8. Identify findings that require further investigation rather than overstating causality.
 
-- Validate the Power BI model against the complete source workbook.
-- Investigate M03 operating conditions.
-- Compare machine performance within each product.
-- Examine operator and production-time effects.
-- Calculate correlations and, where appropriate, statistical tests.
-- Identify the strongest factors associated with defective production.
-- Produce final management recommendations.
+## Recommendations
+
+Based on the current analysis:
+
+1. **Prioritize M03 for a quality investigation** because it consistently shows higher defect rates.
+2. Compare M03 against M01/M02 for calibration, maintenance condition, operating settings, and production-time patterns.
+3. Investigate M03 performance **within each product**, rather than relying only on overall machine averages.
+4. Validate the apparent humidity relationship with correlation analysis and, where appropriate, statistical testing.
+5. Collect additional operational variables such as temperature, machine settings, downtime, maintenance events, and shift information for a stronger root-cause analysis.
 
 ## Limitations
 
 - The dataset is synthetic and intended for portfolio/learning purposes.
-- The analysis currently identifies associations rather than proven causal relationships.
-- Machine performance may be affected by product assignment and operating conditions.
+- The current analysis identifies associations, not causal relationships.
+- The dataset contains a limited number of operational variables.
+- Some variables are strongly linked to product type, which can create confounding effects.
+- Statistical significance has not yet been formally tested.
+
+## Next Steps
+
+- Perform correlation analysis in Python.
+- Test machine differences statistically.
+- Investigate operator and production-time effects.
+- Analyze machine/product interactions.
+- Add statistical validation to the final conclusions.
+- Refine the Power BI dashboard after the validated analysis.
+
+## Files
+
+- [Synthetic Excel dataset](data/Project_1_Manufacturing_Quality_Sample.xlsx)
+- [Power BI report](power-bi/Manufacturing_Quality_Analysis.pbix)
+- [Dashboard screenshot](assets/manufacturing-quality-dashboard.jpg)
+- [DAX measures](power-bi/dax-measures.md)
+- [Data dictionary](data/data-dictionary.md)
 
 ## Tools
 
