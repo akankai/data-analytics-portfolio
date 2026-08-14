@@ -76,7 +76,7 @@ The Power BI dashboard follows three analytical questions:
 
 ## Dashboard Preview
 
-![Manufacturing Quality Dashboard](assets/Screenshot%202026-08-14%20174941.png)
+![Manufacturing Quality Dashboard](assets/manufacturing-quality-dashboard.png)
 
 *Power BI dashboard — production and quality performance overview.*
 
