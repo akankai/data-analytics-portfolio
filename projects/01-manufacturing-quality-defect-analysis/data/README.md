@@ -1,28 +1,32 @@
-# Data
+# Dataset
 
 ## Source
 
-The source workbook for this project is the uncleaned Excel dataset provided for the case study.
+This project uses a **synthetic dataset created specifically for this portfolio project**. It does not contain confidential company information.
 
-The workbook contains two sheets:
+## Scope
 
-- `Production_Data` — batch-level production and quality observations.
-- `Data_Dictionary` — original field descriptions.
+- 460 production records
+- 5 chocolate products
+- 3 machines
+- 5 operators
+- 12 fields
 
-The workbook contains 460 records and 12 variables.
+## Data quality
 
-## Data quality checks
+The current source workbook contains:
 
-Initial checks on the provided workbook found:
+- 0 missing values
+- 0 duplicate rows
 
-- No missing values in the main production table.
-- `Date` is stored as a date field.
-- Production quantity and defect counts are numeric.
-- Quality measurements are numeric.
-- Product, batch, operator, and machine are categorical fields.
+## Main measures
 
-## Important note
+- Production quantity
+- Defects
+- Humidity
+- Fat percentage
+- Viscosity
+- Fineness
+- Production time
 
-The dataset is synthetic and contains no confidential company information. It is suitable for a public portfolio.
-
-The final repository should contain only the shareable source dataset or a cleaned/public version of it.
+The raw workbook is intended to demonstrate the analysis workflow rather than represent real industrial measurements.
