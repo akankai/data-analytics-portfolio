@@ -1,41 +1,24 @@
-# Analysis Methodology
+# Analysis
 
-## 1. KPI definition
+## Analytical framework
 
-The primary KPI is the defect rate because raw defect counts are strongly influenced by production volume.
+The project uses a descriptive and exploratory approach to evaluate production quality.
 
-## 2. Exploratory analysis
+### 1. KPI analysis
+The primary KPI is the defect rate because raw defect counts are affected by production volume.
 
-The analysis first examines:
+### 2. Trend analysis
+Monthly defect-rate performance is reviewed to identify changes over the production period.
 
-- Monthly defect-rate trend.
-- Product-level defect rates.
-- Machine-level defect rates.
-- Quality-parameter scatter plots.
+### 3. Product and machine comparison
+Products and machines are compared using normalized defect rates rather than raw defect counts.
 
-## 3. Hypothesis testing through segmentation
+### 4. Machine-product segmentation
+A machine/product matrix is used to check whether the machine signal remains visible within individual products.
 
-A high machine-level defect rate alone is not enough to identify a machine as a likely problem because machine usage may differ by product.
+### 5. Quality-parameter exploration
+Scatter plots are used to explore relationships between defect rate and humidity, fat percentage, viscosity and fineness.
 
-The machine/product matrix therefore compares defect rates within products.
+## Interpretation principle
 
-### Key result
-
-M03 has the highest overall defect rate in the dashboard and remains highest for most product categories. This makes M03 the primary area for further investigation.
-
-## 4. Interpretation
-
-The analysis deliberately avoids causal claims. A visible association is treated as a hypothesis that requires additional operational data or statistical testing.
-
-## 5. Next analytical steps
-
-For a stronger version of the project, the next iteration should add:
-
-- Correlation coefficients.
-- Statistical significance testing.
-- Control charts for defect rate.
-- Outlier detection.
-- Shift/operator analysis.
-- Maintenance-event analysis.
-- A machine × product interaction analysis.
-- A multivariate model to estimate which factors are most associated with defects.
+The analysis distinguishes **association from causation**. A higher defect rate identifies an area for investigation; it does not by itself prove a root cause.
