@@ -1,11 +1,5 @@
-# Assets
+# Dashboard Asset
 
-Use this folder for portfolio presentation material.
+The folder contains the final Power BI dashboard screenshot used to present the project results.
 
-Recommended files:
-
-- `dashboard-overview.png` — final Power BI dashboard screenshot.
-- `machine-analysis.png` — machine/product comparison.
-- `quality-parameters.png` — selected exploratory analysis.
-
-Keep screenshots clean and readable. The dashboard screenshot is especially useful because GitHub visitors can understand the project without opening Power BI.
+**Dashboard:** `manufacturing-quality-dashboard.jpg`
