@@ -1,37 +1,42 @@
 # Data Analytics Portfolio
 
-A portfolio of data analysis, business intelligence, and manufacturing analytics projects.
+A practical portfolio of data analysis and business intelligence projects focused on manufacturing, quality control, production, and agro-food operations.
 
-## Portfolio Roadmap
+## Projects
 
-| Project | Focus | Tools | Status |
+| # | Project | Tools | Status |
 |---|---|---|---|
-| 01 — Manufacturing Quality Analysis | Production quality, defects, machine performance | Excel, Power BI, DAX | In progress |
-| 02 — Production Performance Analysis | Production KPIs, downtime, efficiency | Excel, SQL, Power BI | Planned |
-| 03 — Food Production & Waste Analysis | Waste, yield, process losses | SQL, Python, Power BI | Planned |
-| 04 — QC Data Analysis | Quality-control measurements and trends | Python, Excel | Planned |
-| 05 — Automated Reporting | Automated production/QC reporting | Python, Excel | Planned |
-| 06 — End-to-End Agro-Food Analytics | Integrated business analytics project | SQL, Python, Power BI | Planned |
+| 01 | **Manufacturing Quality & Defect Analysis** | Excel, Power BI, DAX | In progress |
+| 02 | Production Performance Analysis | SQL, Power BI | Planned |
+| 03 | Food Production & Waste Analysis | SQL, Python, Power BI | Planned |
+| 04 | Quality Control Data Analysis | Python, Excel | Planned |
+| 05 | Automated QC & Production Reporting | Python, Excel | Planned |
+| 06 | End-to-End Agro-Food Analytics | SQL, Python, Power BI | Planned |
 
-## Project Structure
+## Project 01 — Manufacturing Quality & Defect Analysis
+
+A simulated chocolate-manufacturing case study investigating production quality, defect rates, product performance, and machine performance. The project follows a complete analyst workflow: business problem definition → KPI design → exploratory analysis → dashboarding → hypothesis testing → recommendations.
+
+### Key questions
+
+- How is the overall defect rate evolving over time?
+- Which products have the highest defect rates?
+- Which machines require investigation?
+- Are quality parameters associated with higher defect rates?
+- Is the machine effect consistent across products?
+
+### Portfolio structure
 
 ```text
 projects/
-├── 01-manufacturing-quality-analysis/
-│   ├── README.md
-│   ├── data/
-│   ├── power-bi/
-│   ├── analysis/
-│   └── assets/
-├── 02-production-performance-analysis/
-├── 03-food-production-waste-analysis/
-├── 04-qc-data-analysis/
-├── 05-automated-reporting/
-└── 06-end-to-end-agro-food-analytics/
+└── 01-manufacturing-quality-defect-analysis/
+    ├── README.md
+    ├── data/
+    ├── power-bi/
+    ├── analysis/
+    └── assets/
 ```
-
-Each project documents the business problem, data, methodology, analysis, visualizations, findings, and recommendations.
 
 ## About
 
-The portfolio focuses on practical analytics applied to production, quality control, and agro-food operations, with an emphasis on turning operational data into actionable business insights.
+The portfolio emphasizes practical analysis rather than tutorial exercises: defining a business problem, building reliable KPIs, testing hypotheses, communicating findings, and translating data into operational recommendations.
