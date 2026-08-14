@@ -1,7 +1,5 @@
 # Project 01 — Manufacturing Quality & Defect Analysis
 
-![Dashboard](assets/manufacturing-quality-dashboard.jpg)
-
 ## Business Problem
 
 A chocolate manufacturing company wants to understand production quality performance and investigate the factors associated with defective production.
@@ -68,13 +66,13 @@ The Power BI dashboard is organized into three analytical layers:
 - Total Defects
 - Defect Rate
 
-### 2. Where quality issues are concentrated
+### 2. Where are quality issues concentrated?
 
 - Defect Rate by Month
 - Defect Rate by Product
 - Defect Rate by Machine
 
-### 3. Potential contributing factors
+### 3. What factors may be associated with defects?
 
 - Defect Rate vs Humidity
 - Defect Rate vs Fat Percentage
@@ -102,14 +100,12 @@ A high value in one product parameter should not automatically be interpreted as
 - **Fat percentage:** no obvious positive relationship with defect rate.
 - **Viscosity:** no obvious linear relationship with defect rate.
 - **Fineness:** no obvious linear relationship with defect rate.
-- **Humidity:** shows a possible relationship in parts of the dataset, but further statistical validation is required before drawing a causal conclusion.
+- **Humidity:** shows a possible relationship in parts of the dataset, but requires further statistical validation before drawing a causal conclusion.
 
 ## Analytical Approach
 
-The project followed a practical analyst workflow:
-
 1. Define the business problem.
-2. Inspect and understand the production dataset.
+2. Inspect and validate the production dataset.
 3. Build core DAX KPIs.
 4. Explore quality performance over time.
 5. Compare products and machines using normalized defect rates.
@@ -119,13 +115,11 @@ The project followed a practical analyst workflow:
 
 ## Recommendations
 
-Based on the current analysis:
-
 1. **Prioritize M03 for a quality investigation** because it consistently shows higher defect rates.
 2. Compare M03 against M01/M02 for calibration, maintenance condition, operating settings, and production-time patterns.
 3. Investigate M03 performance **within each product**, rather than relying only on overall machine averages.
-4. Validate the apparent humidity relationship with correlation analysis and, where appropriate, statistical testing.
-5. Collect additional operational variables such as temperature, machine settings, downtime, maintenance events, and shift information for a stronger root-cause analysis.
+4. Validate the apparent humidity relationship with correlation analysis and appropriate statistical testing.
+5. Collect additional operational variables such as temperature, machine settings, downtime, maintenance events, and shift information.
 
 ## Limitations
 
@@ -144,13 +138,16 @@ Based on the current analysis:
 - Add statistical validation to the final conclusions.
 - Refine the Power BI dashboard after the validated analysis.
 
-## Files
+## Documentation
 
-- [Synthetic Excel dataset](data/Project_1_Manufacturing_Quality_Sample.xlsx)
-- [Power BI report](power-bi/Manufacturing_Quality_Analysis.pbix)
-- [Dashboard screenshot](assets/manufacturing-quality-dashboard.jpg)
+- [Analytical findings](analysis/findings.md)
+- [Analysis methodology](analysis/methodology.md)
+- [Power BI dashboard documentation](power-bi/dashboard.md)
 - [DAX measures](power-bi/dax-measures.md)
 - [Data dictionary](data/data-dictionary.md)
+- [Dataset documentation](data/README.md)
+
+The original synthetic Excel workbook, Power BI `.pbix` report, and dashboard screenshot were supplied as conversation attachments during development. The repository currently contains the complete written case study and analysis documentation; the binary artifacts can be added to the corresponding `data/`, `power-bi/`, and `assets/` folders when committing local files.
 
 ## Tools
 
