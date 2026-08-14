@@ -1,8 +1,8 @@
 # Analytical Findings — Manufacturing Quality & Defect Analysis
 
-## Dataset validation
+## Dataset quality
 
-The synthetic source workbook contains **460 rows and 12 columns**.
+The synthetic source dataset contains **460 production records and 12 fields**.
 
 - Missing values: **0**
 - Duplicate rows: **0**
@@ -11,7 +11,7 @@ The synthetic source workbook contains **460 rows and 12 columns**.
 - Good units: **523,673 units**
 - Overall defect rate: **1.63%**
 
-## Machine analysis
+## Machine performance
 
 | Machine | Defect Rate |
 |---|---:|
@@ -19,44 +19,33 @@ The synthetic source workbook contains **460 rows and 12 columns**.
 | M01 | 1.59% |
 | M02 | 1.52% |
 
-M03 has the highest overall defect rate and the highest rate for 4 of the 5 products. It is therefore the primary machine requiring investigation.
+M03 has the highest overall defect rate and records the highest rate for **4 of the 5 products**. This makes M03 the strongest priority for operational investigation within this dataset.
 
-This is an association, not proof of causation.
+The machine/product comparison is important because aggregate machine differences can be influenced by product assignment. The analysis therefore does **not** claim that M03 is the root cause.
 
-## Product analysis
+## Product performance
 
-Noir Extrême has the highest product-level defect rate in the current dashboard, while Noir Light has the lowest.
+Noir Extrême has the highest product-level defect rate in the dashboard, while Noir Light has the lowest. Product comparisons should be interpreted alongside machine assignment and operating conditions.
 
-Product-level comparisons must be interpreted alongside machine assignment and operating conditions.
+## Quality parameters
 
-## Quality-parameter exploration
+- **Fat percentage:** no obvious positive relationship with defect rate is visible in the exploratory scatter plot.
+- **Viscosity:** no obvious linear relationship with defect rate is visible.
+- **Fineness:** no obvious linear relationship with defect rate is visible.
+- **Humidity:** the visual suggests a possible relationship in parts of the dataset, but the pattern is not sufficient to establish a root cause.
 
-### Humidity
+## Business interpretation
 
-The scatter plot suggests a possible relationship between humidity and defect rate in parts of the dataset. This should be validated statistically before being used as a root-cause claim.
+The strongest actionable signal from the current analysis is the consistently higher defect rate associated with **M03**. The available variables are sufficient to prioritize an investigation, but not to identify a definitive root cause.
 
-### Fat percentage
+## Recommendations
 
-No obvious positive trend between fat percentage and defect rate was observed.
+1. Review M03 calibration, maintenance condition and operating settings.
+2. Compare M03 with M01 and M02 under the same product conditions.
+3. Review M03 performance separately for each product.
+4. Investigate production-time and operator effects.
+5. If this were operational data, combine quality results with maintenance events, downtime, temperature, process settings and shift information.
 
-### Viscosity
+## Scope and limitations
 
-No obvious linear trend between viscosity and defect rate was observed.
-
-### Fineness
-
-No obvious linear trend between fineness and defect rate was observed.
-
-## Analytical interpretation
-
-The most defensible conclusion from the current analysis is:
-
-> **M03 is the main area requiring further investigation because it consistently exhibits higher defect rates, while the available quality parameters do not yet provide enough evidence to establish a root cause.**
-
-## Recommended next analysis
-
-1. Calculate correlations between numerical variables and defect rate.
-2. Compare M01, M02 and M03 within each product.
-3. Test whether machine differences are statistically significant.
-4. Investigate operator and production-time effects.
-5. Add operational variables such as temperature, maintenance events, downtime and machine settings.
+This project uses synthetic data created for portfolio and learning purposes. The findings demonstrate an analytics workflow and should not be interpreted as findings about a real manufacturing facility.
