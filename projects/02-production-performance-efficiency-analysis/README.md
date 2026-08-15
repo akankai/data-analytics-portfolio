@@ -49,7 +49,7 @@ See [`data/data-dictionary.md`](data/data-dictionary.md) for field definitions.
 
 ## Dashboard
 
-![Production Performance Dashboard](assets/production-performance-dashboard.jpg)
+![Production Performance Dashboard](assets/production-performance-dashboard.svg)
 
 ## Key findings
 
