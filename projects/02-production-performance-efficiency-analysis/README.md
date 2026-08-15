@@ -19,15 +19,7 @@ This project demonstrates an end-to-end **Excel → Power BI → DAX** workflow 
 
 ## Dataset
 
-The dataset contains **500 batch-level production records** across:
-
-- 5 chocolate products
-- 4 machines
-- 3 shifts
-- 8 operators
-- January–December 2025
-
-Key fields include planned production, actual production, input quantity, good output, waste, downtime, available time, operating time and energy consumption.
+The dataset contains **500 batch-level production records** across 5 chocolate products, 4 machines, 3 shifts and 8 operators during 2025.
 
 See [`data/data-dictionary.md`](data/data-dictionary.md) for field definitions.
 
@@ -57,46 +49,35 @@ See [`data/data-dictionary.md`](data/data-dictionary.md) for field definitions.
 
 ## Dashboard
 
-![Production Performance Dashboard](assets/production-performance-dashboard.png)
-
-The dashboard provides:
-
-- KPI cards for production, yield, efficiency, waste and utilization.
-- Monthly production-efficiency trend.
-- Efficiency by machine.
-- Efficiency by product.
-- Waste rate by machine.
-- Machine utilization by machine.
+![Production Performance Dashboard](assets/production-performance-dashboard.jpg)
 
 ## Key findings
 
-1. **M03 is the main operational priority.** It has the lowest machine efficiency (**93.18%**) and lowest utilization (**92.27%**), while also recording the highest downtime (**4,823.5 min**). This combination makes it the first machine to investigate.
-2. **M04 has the highest waste rate at 3.19%.** Its utilization is relatively high (**94.75%**), so the issue is not simply lack of machine usage; input/output losses should be investigated separately.
-3. **May is the weakest month for efficiency at 92.98%,** while December is the strongest at **95.18%**. The monthly pattern suggests that production performance varies over time and merits operational investigation.
-4. **Noir Extrême has the lowest product-level efficiency at 92.98%.** The difference between products is relatively small, so product effects should be considered alongside machine assignment and operating conditions.
-5. **The morning shift has the highest waste rate at 3.21%.** This makes it a useful area for a deeper process or startup analysis.
-6. **Overall production is 35,927 kg below plan.** The 93.88% efficiency KPI shows that the operation produced about 94% of planned volume over the period.
+1. **M03 is the main operational priority:** lowest efficiency (**93.18%**) and utilization (**92.27%**) plus the highest downtime (**4,823.5 min**).
+2. **M04 has the highest waste rate at 3.19%.** Its utilization remains relatively high, so waste should be investigated separately from machine usage.
+3. **May is the weakest month for efficiency at 92.98%,** while December is strongest at 95.18%.
+4. **Noir Extrême has the lowest product-level efficiency at 92.98%.**
+5. **The morning shift has the highest waste rate at 3.21%.**
+6. Overall actual production is **35,927 kg below plan**, corresponding to **93.88% production efficiency**.
 
 ## Interpretation and limitations
 
-The dashboard identifies where performance differs, but it does not establish root cause or causality. For example, M03's lower efficiency coincides with higher downtime, but the synthetic dataset does not contain maintenance events, process settings or other causal variables needed to prove that downtime caused the efficiency gap.
-
-Correlation checks also show that downtime has only a weak linear relationship with production gap in this synthetic dataset. Energy consumption is strongly associated with production volume, which is expected because higher production requires more energy; this should not be interpreted as a causal driver of performance.
+The dashboard identifies performance differences and investigation priorities; it does not establish root cause. The synthetic dataset does not contain maintenance events, downtime reason codes or process-setting variables needed to prove causality.
 
 ## Recommendations
 
 1. Prioritize M03 for maintenance, calibration and operating-condition review.
-2. Investigate M04 waste separately from utilization to identify material or process losses.
-3. Review May's production conditions and compare them with the stronger December period.
-4. Analyze product-machine combinations before changing product-level processes.
-5. Review morning-shift startup, setup and operating practices because of the higher waste rate.
-6. In a real deployment, enrich the dataset with maintenance events, downtime reasons, process settings, raw-material lots and shift-level context.
+2. Investigate M04 waste causes separately from utilization.
+3. Compare May and December operating conditions.
+4. Analyze product-machine combinations before making product-specific process changes.
+5. Review morning-shift startup and setup practices.
+6. In a real deployment, enrich the data with maintenance events, downtime reasons, process settings and raw-material context.
 
 ## Tools
 
 - **Microsoft Excel** — source data and validation
 - **Microsoft Power BI** — data modeling and dashboarding
-- **DAX** — KPI measures and interactive analysis
+- **DAX** — KPI measures
 
 ## Project documentation
 

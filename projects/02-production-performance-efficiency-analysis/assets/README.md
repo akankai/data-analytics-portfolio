@@ -1,7 +1,7 @@
 # Dashboard Asset
 
-The dashboard screenshot in this folder is the final Power BI view used for the portfolio project.
+The final Power BI dashboard screenshot is available below.
 
-![Production Performance Dashboard](production-performance-dashboard.png)
+![Production Performance Dashboard](production-performance-dashboard.jpg)
 
 The image is included so the project can be reviewed directly on GitHub without opening Power BI.
