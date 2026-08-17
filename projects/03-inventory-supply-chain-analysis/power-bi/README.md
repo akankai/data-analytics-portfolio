@@ -18,8 +18,9 @@ The report is designed to monitor:
 - Supplier
 - Warehouse
 
-## Files
+## Documentation
 
-- `project 3.pbix` — Power BI report
 - `dashboard.md` — visual inventory and dashboard notes
 - `dax-measures.md` — documented KPI measures
+
+> The `.pbix` report used for this project is retained with the project source material. The repository documentation captures the model logic and dashboard structure.

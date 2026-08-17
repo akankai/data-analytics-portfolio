@@ -1,13 +1,11 @@
 # Data
 
-This folder contains the synthetic Excel source used for Project 03.
+This folder contains the documentation for the synthetic source used for Project 03.
 
-## Source file
+## Source dataset
 
-`Project_3_Inventory_Supply_Chain_Sample.xlsx`
+The analysis was built from a 600-record Excel workbook covering January–December 2025.
 
-- 600 inventory records
-- January–December 2025
 - 10 products
 - 4 categories
 - 5 suppliers
@@ -19,3 +17,5 @@ The workbook contains:
 - `Data_Dictionary` — source field definitions
 
 > The dataset is synthetic and intended for portfolio/learning purposes only.
+
+The original Excel workbook used to build the report is retained with the project source material; this repository folder documents its structure and fields.

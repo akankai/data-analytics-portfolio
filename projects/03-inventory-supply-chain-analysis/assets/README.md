@@ -1,7 +1,7 @@
 # Assets
 
-## Dashboard screenshot
+## Dashboard preview
 
-`inventory-supply-chain-dashboard.png`
+`inventory-supply-chain-dashboard.svg`
 
-This image is the final dashboard screenshot used in the project README.
+A clean repository preview of the final dashboard layout and KPI/visual results.

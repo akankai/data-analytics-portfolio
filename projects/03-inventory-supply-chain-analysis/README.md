@@ -58,7 +58,7 @@ See [data dictionary](data/data-dictionary.md) for field definitions.
 
 ## Dashboard
 
-![Inventory & Supply Chain Dashboard](assets/inventory-supply-chain-dashboard.png)
+![Inventory & Supply Chain Dashboard](assets/inventory-supply-chain-dashboard.svg)
 
 The dashboard includes:
 
