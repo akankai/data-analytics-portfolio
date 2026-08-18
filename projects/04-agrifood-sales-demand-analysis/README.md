@@ -1,82 +1,54 @@
-# Project 04 — AgriFood Sales & Demand Analysis
+# Project 4 — AgriFood Sales Analysis
 
-## Overview
-
-This project analyzes synthetic agrifood sales data to understand revenue, profit, product performance, regional demand, sales-channel performance, monthly trends and promotion effects.
-
-The project demonstrates an end-to-end **Excel → SQL → Power BI → business insights** workflow.
-
-> **Dataset note:** The dataset is synthetic and was created for portfolio/learning purposes. It does not represent confidential or real company data.
-
-## Business objectives
-
-- Measure overall revenue, cost and profit performance.
-- Compare sales and profitability across product categories and products.
-- Identify the strongest and weakest regions.
-- Evaluate Online, Retail, Supermarket and Wholesale channels.
-- Track monthly sales and profit trends.
-- Compare promoted and non-promoted orders.
-- Identify products and segments with the strongest demand and margin contribution.
-
-## Dataset
-
-The source workbook contains a `Sales_Data` table with sales transactions and a data dictionary. Key fields include:
-
-- Date and Order_ID
-- Product and Category
-- Region
-- Sales_Channel
-- Units_Sold
-- Unit_Price_MAD and Unit_Cost_MAD
-- Promotion
-- Revenue_MAD, Cost_MAD and Profit_MAD
-
-## SQL analysis
-
-The SQL layer is organized into focused analysis scripts:
-
-| Script | Purpose |
-|---|---|
-| `01_overall_performance.sql` | Overall revenue, cost, profit, margin and volume KPIs |
-| `02_category_analysis.sql` | Category-level sales and profitability |
-| `03_product_analysis.sql` | Product performance and ranking |
-| `04_regional_analysis.sql` | Regional revenue, profit and demand |
-| `05_sales_channel_analysis.sql` | Channel performance and mix |
-| `06_monthly_trends.sql` | Monthly revenue, profit and units sold |
-| `07_promotion_analysis.sql` | Promotion vs non-promotion performance |
-
-The scripts are written for **SQLite**. Import the workbook's `Sales_Data` sheet into a table named `sales_data` before running them.
-
-## Power BI
-
-Power BI is used for interactive reporting and dashboard exploration. Recommended report areas include:
-
-- Executive KPI overview
-- Revenue and profit by category
-- Product performance
-- Regional performance
-- Sales-channel mix
-- Monthly trend analysis
-- Promotion comparison
-
-The Power BI project file is maintained separately because `.pbix` is a binary file.
-
-## Key analytical questions
-
-1. Which categories and products generate the most revenue and profit?
-2. Which products have strong sales volume but weaker margins?
-3. Which regions contribute the most to total performance?
-4. Which sales channels are most important for revenue and profitability?
-5. How does performance change throughout the year?
-6. Do promoted orders show different revenue, volume or margin characteristics?
+A complete sales analytics project combining **SQL (SQLite)** and **Power BI** to evaluate revenue, profitability, products, regions, sales channels, monthly trends, and promotions.
 
 ## Tools
+- SQL / SQLite
+- Power BI
+- CSV data
 
-- **Microsoft Excel** — source data and validation
-- **SQLite / SQL** — querying, aggregation and business analysis
-- **Microsoft Power BI** — data modeling and dashboarding
-- **DAX** — interactive KPI calculations
+## Project structure
+```text
+Project_4_AgriFood_Sales_Analysis/
+├── AgriFood_Sales_Analysis.pbix
+├── sales_data.csv
+├── README.md
+└── sql/
+    ├── 01_overall_performance.sql
+    ├── 02_data_quality.sql
+    ├── 03_category_analysis.sql
+    ├── 04_product_analysis.sql
+    ├── 05_regional_analysis.sql
+    ├── 06_sales_channel_analysis.sql
+    ├── 07_monthly_trends.sql
+    └── 08_promotion_analysis.sql
+```
 
-## Portfolio skills demonstrated
+## Baseline KPIs
+| KPI | Value |
+|---|---:|
+| Orders | 1,001 |
+| Units sold | 105,204 |
+| Revenue | 2,816,965.08 MAD |
+| Cost | 1,922,505.27 MAD |
+| Profit | 894,447.95 MAD |
+| Profit margin | 31.75% |
 
-Data cleaning and validation, SQL aggregation, GROUP BY analysis, conditional aggregation, ranking, time-series analysis, profitability analysis, business KPI design, Power BI modeling and dashboard communication.
+One completely blank record was identified in the source data and excluded from analytical calculations without modifying the raw dataset.
+
+## Key business insights
+- **Olive Oil 1L** is the top revenue-generating product at **843,481.43 MAD**.
+- **Oils** is the largest category by revenue, but its **27.54%** margin is the lowest among the main categories.
+- **Canned Goods** has the highest category margin at **41.61%**.
+- **Casablanca** leads regional revenue and profit with **908,991.99 MAD** revenue and **288,538.08 MAD** profit.
+- **Fes** has the strongest regional margin at **32.62%**.
+- **Supermarket** is the strongest sales channel, generating **951,074.37 MAD** revenue and **304,255.02 MAD** profit.
+- **May** is the strongest month with **328,424.62 MAD** revenue and **102,600.24 MAD** profit.
+- **September** is the weakest month with **166,427.16 MAD** revenue and **52,296.03 MAD** profit.
+- Promotional transactions show a lower observed margin (**27.78%**) than non-promotional transactions (**33.02%**). This is an association, not proof that promotions caused the lower margin.
+
+## SQL work
+The SQL folder contains reproducible queries for overall performance, data quality, category performance, product rankings, regional performance, sales channels, monthly trends, and promotion analysis.
+
+## Power BI
+The `.pbix` file contains the two-page interactive dashboard created from the same sales dataset.
