@@ -9,6 +9,7 @@ A portfolio of practical data analysis and business intelligence projects focuse
 | **01 — Manufacturing Quality & Defect Analysis** | Production quality, defects, product and machine performance | Excel, Power BI, DAX | **Complete** |
 | **02 — Production Performance & Efficiency Analysis** | Production efficiency, yield, waste, utilization and operational performance | Excel, Power BI, DAX | **Complete** |
 | **03 — Inventory & Supply Chain Analysis** | Inventory value, stockout risk, low-stock exposure, supplier reliability and inventory turnover | Excel, Power BI, DAX | **Complete** |
+| **04 — AgriFood Sales & Demand Analysis** | Revenue, profit, product/category performance, regional demand, channels, trends and promotions | Excel, SQL, Power BI, DAX | **Complete** |
 
 ## Project structure
 
@@ -16,12 +17,17 @@ A portfolio of practical data analysis and business intelligence projects focuse
 projects/
 ├── 01-manufacturing-quality-defect-analysis/
 ├── 02-production-performance-efficiency-analysis/
-└── 03-inventory-supply-chain-analysis/
+├── 03-inventory-supply-chain-analysis/
+└── 04-agrifood-sales-demand-analysis/
     ├── README.md
-    ├── analysis/
-    ├── power-bi/
-    ├── assets/
-    └── data/
+    └── sql/
+        ├── 01_overall_performance.sql
+        ├── 02_category_analysis.sql
+        ├── 03_product_analysis.sql
+        ├── 04_regional_analysis.sql
+        ├── 05_sales_channel_analysis.sql
+        ├── 06_monthly_trends.sql
+        └── 07_promotion_analysis.sql
 ```
 
 ## About the portfolio
