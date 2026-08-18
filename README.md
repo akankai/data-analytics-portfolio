@@ -1,19 +1,40 @@
-# Data Analytics Portfolio
+# Data Analytics & Business Intelligence Portfolio
 
-A portfolio of practical data analysis and business intelligence projects focused on turning operational and agro-food data into actionable insights.
+A collection of practical analytics projects focused on turning operational, manufacturing, supply-chain, and agro-food data into clear business insights.
+
+## What I work with
+
+**Analytics & BI:** Excel · SQL / SQLite · Power BI · DAX
+
+**Workflow:** Data validation → KPI design → Exploratory analysis → Dashboarding → Business interpretation
 
 ## Featured projects
 
-| Project | Focus | Tools | Status |
+| # | Project | Business focus | Tools |
 |---|---|---|---|
-| **01 — Manufacturing Quality & Defect Analysis** | Production quality, defects, product and machine performance | Excel, Power BI, DAX | **Complete** |
-| **02 — Production Performance & Efficiency Analysis** | Production efficiency, yield, waste, utilization and operational performance | Excel, Power BI, DAX | **Complete** |
-| **03 — Inventory & Supply Chain Analysis** | Inventory value, stockout risk, low-stock exposure, supplier reliability and inventory turnover | Excel, Power BI, DAX | **Complete** |
-| **04 — AgriFood Sales & Demand Analysis** | Revenue, profitability, products, categories, regions, channels, trends and promotions | Excel, SQL, Power BI, DAX | **Complete** |
+| **01** | [Manufacturing Quality & Defect Analysis](projects/01-manufacturing-quality-defect-analysis/) | Defect rates, machine performance, product quality | Excel · Power BI · DAX |
+| **02** | [Production Performance & Efficiency Analysis](projects/02-production-performance-efficiency-analysis/) | Efficiency, yield, waste, utilization | Excel · Power BI · DAX |
+| **03** | [Inventory & Supply Chain Analysis](projects/03-inventory-supply-chain-analysis/) | Stockout risk, inventory value, suppliers, turnover | Excel · Power BI · DAX |
+| **04** | [AgriFood Sales & Demand Analysis](projects/04-agrifood-sales-demand-analysis/) | Revenue, profitability, products, regions, channels, trends, promotions | Excel · SQL · Power BI · DAX |
 
-## Project structure
+## Portfolio progression
 
-Each project is organized around the same portfolio pattern: documentation, analysis material, source data, dashboard assets, and Power BI files where applicable.
+The projects are intentionally organized as a business analytics progression:
+
+**Quality → Operations → Supply Chain → Sales & Demand**
+
+This reflects an interest in applying data analysis and business intelligence to operational and agro-food environments.
+
+## What each project demonstrates
+
+- **Business problem framing** — translating operational questions into measurable analytical objectives.
+- **Data validation** — checking completeness, duplicates, and calculation assumptions before analysis.
+- **KPI development** — defining metrics that support business decisions.
+- **SQL analysis** — reproducible aggregations, segmentation, trends, and data-quality checks in Project 04.
+- **Power BI & DAX** — interactive reporting, KPI measures, filtering, and visual analysis.
+- **Business communication** — turning analytical findings into practical recommendations while distinguishing correlation from causation.
+
+## Repository structure
 
 ```text
 projects/
@@ -21,26 +42,16 @@ projects/
 ├── 02-production-performance-efficiency-analysis/
 ├── 03-inventory-supply-chain-analysis/
 └── 04-agrifood-sales-demand-analysis/
-    ├── README.md
-    ├── analysis/
-    ├── assets/
-    ├── data/
-    ├── power-bi/
-    └── sql/
-        ├── 01_overall_performance.sql
-        ├── 02_data_quality.sql
-        ├── 03_category_analysis.sql
-        ├── 04_product_analysis.sql
-        ├── 05_regional_analysis.sql
-        ├── 06_sales_channel_analysis.sql
-        ├── 07_monthly_trends.sql
-        └── 08_promotion_analysis.sql
 ```
 
-## About the portfolio
+Each project contains documentation and the supporting files available for that project, such as source data, analysis notes, dashboard assets, Power BI reports, and SQL scripts.
 
-The projects follow an end-to-end analytics workflow: defining a business question, validating data, creating KPI measures, exploring patterns, building interactive dashboards, communicating findings, and translating results into practical actions.
+## Data note
 
-All datasets used in these portfolio projects are **synthetic and created for learning and demonstration purposes**. They do not represent confidential or real company production data.
+The portfolio datasets are **synthetic and created for learning and demonstration purposes**. They do not represent confidential or real company production data.
 
-Additional projects will be added as they are completed.
+## About
+
+I am building practical skills in **Data Analytics and Business Intelligence**, with an academic background in **agro-food engineering**. This portfolio is focused on demonstrating the ability to move from raw data and business questions to validated KPIs, dashboards, findings, and recommendations.
+
+More projects will be added as they are completed.
