@@ -1,18 +1,33 @@
-# Project 4 — AgriFood Sales Analysis
+# Project 4 — AgriFood Sales & Demand Analysis
 
-A complete sales analytics project combining **SQL (SQLite)** and **Power BI** to evaluate revenue, profitability, products, regions, sales channels, monthly trends, and promotions.
+An end-to-end sales analytics project using a synthetic agrifood dataset. The project combines **Excel, SQL (SQLite), and Power BI** to evaluate revenue, profitability, product and category performance, regional demand, sales channels, monthly trends, and promotions.
+
+## Business objectives
+
+- Measure revenue, cost, profit, margin, orders, and units sold.
+- Identify the strongest products and categories.
+- Compare regional revenue, profit, and margins.
+- Evaluate sales-channel performance.
+- Analyze monthly sales and profitability trends.
+- Compare promoted and non-promoted transactions.
+- Turn the findings into practical business recommendations.
 
 ## Tools
-- SQL / SQLite
-- Power BI
-- CSV data
+
+- **Microsoft Excel** — source data and validation
+- **SQLite / SQL** — reproducible business analysis
+- **Power BI** — interactive dashboard and KPI reporting
+- **DAX** — Power BI calculations and measures
 
 ## Project structure
+
 ```text
-Project_4_AgriFood_Sales_Analysis/
-├── AgriFood_Sales_Analysis.pbix
-├── sales_data.csv
+04-agrifood-sales-demand-analysis/
 ├── README.md
+├── analysis/              # Supporting analysis/report material
+├── assets/                # Dashboard screenshots and portfolio visuals
+├── data/                  # Source Excel/CSV data
+├── power-bi/              # Power BI .pbix file
 └── sql/
     ├── 01_overall_performance.sql
     ├── 02_data_quality.sql
@@ -24,7 +39,12 @@ Project_4_AgriFood_Sales_Analysis/
     └── 08_promotion_analysis.sql
 ```
 
+## Data quality
+
+The raw source contains one completely blank record. It is **not modified or deleted** from the source dataset; analytical SQL excludes rows without an `Order_ID`. The `02_data_quality.sql` script documents the checks and the exclusion rule.
+
 ## Baseline KPIs
+
 | KPI | Value |
 |---|---:|
 | Orders | 1,001 |
@@ -34,9 +54,8 @@ Project_4_AgriFood_Sales_Analysis/
 | Profit | 894,447.95 MAD |
 | Profit margin | 31.75% |
 
-One completely blank record was identified in the source data and excluded from analytical calculations without modifying the raw dataset.
-
 ## Key business insights
+
 - **Olive Oil 1L** is the top revenue-generating product at **843,481.43 MAD**.
 - **Oils** is the largest category by revenue, but its **27.54%** margin is the lowest among the main categories.
 - **Canned Goods** has the highest category margin at **41.61%**.
@@ -47,8 +66,16 @@ One completely blank record was identified in the source data and excluded from 
 - **September** is the weakest month with **166,427.16 MAD** revenue and **52,296.03 MAD** profit.
 - Promotional transactions show a lower observed margin (**27.78%**) than non-promotional transactions (**33.02%**). This is an association, not proof that promotions caused the lower margin.
 
-## SQL work
-The SQL folder contains reproducible queries for overall performance, data quality, category performance, product rankings, regional performance, sales channels, monthly trends, and promotion analysis.
+## SQL analysis
+
+The SQL layer is designed for SQLite and is split into eight reproducible analyses: overall performance, data quality, category performance, product ranking, regional performance, sales channels, monthly trends, and promotion comparison.
 
 ## Power BI
-The `.pbix` file contains the two-page interactive dashboard created from the same sales dataset.
+
+The Power BI report is intended to present the same analytical story through interactive KPI cards, category/product comparisons, regional and channel breakdowns, monthly trends, and promotion analysis. The `.pbix` belongs in `power-bi/` when uploaded.
+
+## Portfolio value
+
+This project demonstrates an end-to-end workflow: **data validation → SQL analysis → KPI design → Power BI visualization → business interpretation**.
+
+All data is synthetic and created for learning and portfolio demonstration purposes; it does not represent confidential or real company data.
