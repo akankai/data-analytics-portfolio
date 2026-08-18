@@ -9,9 +9,11 @@ A portfolio of practical data analysis and business intelligence projects focuse
 | **01 — Manufacturing Quality & Defect Analysis** | Production quality, defects, product and machine performance | Excel, Power BI, DAX | **Complete** |
 | **02 — Production Performance & Efficiency Analysis** | Production efficiency, yield, waste, utilization and operational performance | Excel, Power BI, DAX | **Complete** |
 | **03 — Inventory & Supply Chain Analysis** | Inventory value, stockout risk, low-stock exposure, supplier reliability and inventory turnover | Excel, Power BI, DAX | **Complete** |
-| **04 — AgriFood Sales & Demand Analysis** | Revenue, profit, product/category performance, regional demand, channels, trends and promotions | Excel, SQL, Power BI, DAX | **Complete** |
+| **04 — AgriFood Sales & Demand Analysis** | Revenue, profitability, products, categories, regions, channels, trends and promotions | Excel, SQL, Power BI, DAX | **Complete** |
 
 ## Project structure
+
+Each project is organized around the same portfolio pattern: documentation, analysis material, source data, dashboard assets, and Power BI files where applicable.
 
 ```text
 projects/
@@ -20,19 +22,24 @@ projects/
 ├── 03-inventory-supply-chain-analysis/
 └── 04-agrifood-sales-demand-analysis/
     ├── README.md
+    ├── analysis/
+    ├── assets/
+    ├── data/
+    ├── power-bi/
     └── sql/
         ├── 01_overall_performance.sql
-        ├── 02_category_analysis.sql
-        ├── 03_product_analysis.sql
-        ├── 04_regional_analysis.sql
-        ├── 05_sales_channel_analysis.sql
-        ├── 06_monthly_trends.sql
-        └── 07_promotion_analysis.sql
+        ├── 02_data_quality.sql
+        ├── 03_category_analysis.sql
+        ├── 04_product_analysis.sql
+        ├── 05_regional_analysis.sql
+        ├── 06_sales_channel_analysis.sql
+        ├── 07_monthly_trends.sql
+        └── 08_promotion_analysis.sql
 ```
 
 ## About the portfolio
 
-The projects follow an end-to-end analytics workflow: defining a business question, validating data, creating KPI measures, exploring patterns, building interactive dashboards, communicating findings and translating results into practical actions.
+The projects follow an end-to-end analytics workflow: defining a business question, validating data, creating KPI measures, exploring patterns, building interactive dashboards, communicating findings, and translating results into practical actions.
 
 All datasets used in these portfolio projects are **synthetic and created for learning and demonstration purposes**. They do not represent confidential or real company production data.
 
