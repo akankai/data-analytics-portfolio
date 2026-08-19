@@ -4,49 +4,29 @@
 
 An end-to-end customer analytics project that transforms transaction-level sales data into actionable customer segments using **Python, SQL/SQLite, Pandas, and RFM analysis**.
 
-The objective is to identify high-value customers, retention risks, and growth opportunities rather than simply reporting total sales.
-
-> **Dataset note:** The committed dataset is synthetic and reproducible (random seed 42). It is designed for portfolio/learning purposes and does not represent real company data.
-
 ## Business problem
 
-A retailer has transaction-level sales data but needs a customer-level view: Who generates the most value? Which valuable customers may be at risk of becoming inactive? Which groups should receive retention or growth attention?
+A retailer has transaction-level sales data but needs a customer-level view: who generates the most value, which valuable customers may be drifting away, and which groups deserve different retention or growth strategies?
+
+## Dataset
+
+The project uses a synthetic, reproducible dataset generated with seed 42: **500 orders, 117 customers, 12 products across 2025**. It is designed for portfolio/learning purposes and does not represent real company data.
+
+Run `scripts/generate_dataset.py` to regenerate the CSV and SQLite database from the same deterministic logic.
 
 ## Objectives
 
 - Build reliable customer-level purchase metrics.
 - Calculate Recency, Frequency, and Monetary (RFM) measures.
 - Score customers using relative quintiles.
-- Create transparent business-oriented customer segments.
-- Compare segment size, revenue, profit, frequency, and recency.
+- Create transparent business-oriented segments.
+- Compare segment size, revenue, frequency, and recency.
 - Identify high-value retention targets.
 - Produce reproducible SQL and Python analysis.
 
-## Dataset
-
-`data/customer_transactions.csv` contains **3,000 synthetic orders** across **493 customers** and 12 products/categories.
-
-Key fields:
-
-| Field | Description |
-|---|---|
-| `Order_ID` | Unique order identifier |
-| `Customer_ID` | Customer identifier |
-| `Order_Date` | Order date |
-| `Product` | Product name |
-| `Category` | Product category |
-| `Country` | Customer/order market |
-| `Sales_Channel` | Sales channel |
-| `Quantity` | Units purchased |
-| `Unit_Price_MAD` | Selling price in MAD |
-| `Revenue_MAD` | Order revenue |
-| `Cost_MAD` | Order cost |
-| `Profit_MAD` | Order profit |
-| `Discount_Rate` | Applied discount rate |
-
 ## Methodology
 
-**Validation → customer aggregation → RFM scoring → segmentation → segment analysis → business recommendations**
+**Validation → customer aggregation → RFM scoring → segmentation → segment analysis → recommendations**
 
 - **Recency:** days since the customer's latest order.
 - **Frequency:** number of distinct orders.
@@ -54,36 +34,42 @@ Key fields:
 
 R, F, and M are scored using quintiles. Recency is reversed so more recent customers receive higher scores.
 
+### Segment rules
+
+- **Champions:** R ≥ 4, F ≥ 4, M ≥ 4
+- **Loyal Customers:** R ≥ 4, F ≥ 3
+- **At Risk - High Value:** R ≤ 2, F ≥ 3, M ≥ 3
+- **At Risk:** R ≤ 2
+- **Potential Loyalists:** remaining customers
+
 ## Baseline KPIs
 
 | KPI | Result |
 |---|---:|
-| Orders | 3,000 |
-| Customers with orders | 493 |
-| Revenue | **280,102.97 MAD** |
-| Profit | **92,690.70 MAD** |
-| Profit margin | **33.09%** |
+| Orders | 500 |
+| Customers with orders | 117 |
+| Revenue | **45,664.56 MAD** |
+| Profit | **15,171.06 MAD** |
+| Profit margin | **33.23%** |
 
 ## Segment results
 
 | Segment | Customers | Revenue (MAD) | Avg. Recency (days) | Avg. Frequency |
 |---|---:|---:|---:|---:|
-| Champions | 99 | 109,633.54 | 14.6 | 11.16 |
-| Potential Loyalists | 140 | 69,257.88 | 35.7 | 5.37 |
-| At Risk - High Value | 53 | 36,650.26 | 105.6 | 7.21 |
-| At Risk | 144 | 35,930.64 | 151.5 | 2.90 |
-| Loyal Customers | 57 | 28,630.65 | 14.4 | 6.04 |
+| Champions | 22 | 15,688.00 | 19.1 | 7.68 |
+| Potential Loyalists | 36 | 11,579.98 | 39.7 | 3.47 |
+| At Risk | 35 | 7,390.79 | 164.1 | 2.49 |
+| At Risk - High Value | 12 | 6,761.40 | 117.3 | 5.58 |
+| Loyal Customers | 12 | 4,244.39 | 15.0 | 4.33 |
 
 ## Key findings
 
-- **Champions** are the largest revenue-producing segment, generating **109,633.54 MAD**, about **39.1% of total revenue**.
-- **At Risk - High Value** customers represent **36,650.26 MAD**, about **13.1% of revenue**, while averaging more than 100 days since their last order.
-- **Potential Loyalists** are the largest segment by customer count, creating an opportunity to move a broad group toward higher purchase frequency.
-- Customer count alone is not enough to prioritize retention: the smaller At Risk - High Value group represents substantially more revenue per customer than the general At Risk group.
+- **Champions** generate **15,688.00 MAD**, about **34.4% of total revenue**.
+- **At Risk - High Value** customers generate **6,761.40 MAD** and average **117 days** since their latest order, making them the clearest targeted retention priority.
+- **Potential Loyalists** are the largest segment by customer count, creating an opportunity to increase purchase frequency.
+- Customer count alone is not enough for prioritization: the smaller At Risk - High Value segment generates substantially more revenue per customer than the general At Risk group.
 
 ## SQL analysis
-
-The SQLite layer contains five focused analyses:
 
 ```text
 sql/
@@ -94,9 +80,9 @@ sql/
 └── 05_retention_targets.sql
 ```
 
-These demonstrate aggregation, customer-level grouping, date calculations, segmentation logic, revenue-share calculations, filtering, and ranking-oriented outputs.
+The SQL layer demonstrates aggregation, customer-level grouping, date calculations, window functions, revenue-share calculations, segmentation analysis, and retention-target filtering.
 
-## Python analysis
+## Python notebook
 
 [`notebooks/01_customer_segmentation.ipynb`](notebooks/01_customer_segmentation.ipynb) demonstrates:
 
@@ -104,27 +90,29 @@ These demonstrate aggregation, customer-level grouping, date calculations, segme
 - KPI calculation
 - customer aggregation
 - quantile-based RFM scoring
-- rule-based segmentation
+- transparent rule-based segmentation
 - segment performance analysis
-- visualisation
-- export of analytical results
+- visualization
+- retention-target extraction
 
-## Database
+## SQLite database
 
-`data/customer_segmentation.db` contains the reproducible SQLite tables used by the SQL analysis:
+The generator creates `data/customer_segmentation.db` with three tables:
 
 - `transactions` — transaction-level data
 - `customer_rfm` — customer-level RFM metrics and segments
 - `segment_summary` — segment-level KPIs
 
+The database is generated from the same deterministic source logic as the CSV, keeping the project reproducible.
+
 ## Business recommendations
 
-1. **Protect Champions:** prioritize retention, service quality, and relevant cross-sell opportunities for the highest-value customers.
-2. **Target At Risk - High Value:** create targeted reactivation campaigns rather than broad discounting.
-3. **Develop Potential Loyalists:** encourage higher purchase frequency through relevant bundles and personalized offers.
-4. **Monitor discounting:** compare retention outcomes against margin impact before increasing incentives.
+1. **Protect Champions:** prioritize retention and relevant cross-sell opportunities.
+2. **Target At Risk - High Value:** use focused reactivation rather than broad discounting.
+3. **Develop Potential Loyalists:** encourage higher purchase frequency through relevant bundles or personalized offers.
+4. **Monitor discounting:** evaluate retention outcomes against margin impact before increasing incentives.
 
-These recommendations are based on descriptive segmentation; RFM does not prove that a specific intervention will cause higher future revenue.
+These are descriptive recommendations; RFM does not prove that an intervention will cause future revenue.
 
 ## Project structure
 
@@ -135,8 +123,7 @@ These recommendations are based on descriptive segmentation; RFM does not prove 
 │   ├── findings.md
 │   └── methodology.md
 ├── data/
-│   ├── customer_transactions.csv
-│   └── customer_segmentation.db
+│   └── customer_transactions.csv  # generated by the script
 ├── notebooks/
 │   └── 01_customer_segmentation.ipynb
 ├── scripts/
