@@ -1,8 +1,0 @@
-Order_ID,Customer_ID,Order_Date,Product,Category,Country,Sales_Channel,Quantity,Unit_Price_MAD,Discount_Rate,Revenue_MAD,Cost_MAD,Profit_MAD
-O100000,10078,2025-01-01,Flour 5kg,Baking,Morocco,Supermarket,2,48.11,0.0,96.22,60.77,35.45
-O100001,10061,2025-01-01,Olive Oil 1L,Oils,Morocco,Online,1,35.42,0.05,33.65,21.44,12.21
-O100002,10043,2025-01-02,Couscous 1kg,Grains,Morocco,Supermarket,3,18.75,0.0,56.25,37.55,18.7
-O100003,10005,2025-01-03,Tuna 160g,Canned Goods,Morocco,Retail,4,9.18,0.1,33.05,22.1,10.95
-O100004,10078,2025-01-03,Cheese 500g,Dairy,Morocco,Supermarket,1,40.76,0.0,40.76,28.76,12.0
-
-# NOTE: The complete 500-row dataset is generated deterministically by scripts/generate_dataset.py using seed 42. The first rows above are included as a preview; run the generator to create the full dataset locally.
