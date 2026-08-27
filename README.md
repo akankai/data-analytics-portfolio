@@ -48,6 +48,16 @@ projects/
 
 Each project contains documentation and the supporting files available for that project, such as source data, analysis notes, dashboard assets, Power BI reports, and SQL scripts.
 
+## CI
+
+A GitHub Actions workflow ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) validates the P05 reproducible dataset on each push and pull request:
+- Regenerates the dataset from the deterministic generator script (seed 42)
+- Verifies the output files exist
+- Checks baseline characteristics (500 orders, 117 customers, revenue ≈ 45,664.56 MAD)
+- Verifies the SQLite database contains the expected tables
+
+See [`.github/workflows/README.md`](.github/workflows/README.md) for details.
+
 ## Data note
 
 The portfolio datasets are **synthetic and created for learning and demonstration purposes**. They do not represent confidential or real company production data.

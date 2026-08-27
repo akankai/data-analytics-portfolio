@@ -1,6 +1,5 @@
-# Analysis
+# Analysis additions
 
-This directory contains the analytical documentation for Project 02:
-
-- [`findings.md`](findings.md) — detailed analytical findings with OEE decomposition, machine/product/shift/month breakdowns, and interpretation.
-- [`methodology.md`](methodology.md) — analytical framework, KPI definitions (including OEE), and interpretation rules.
+- [`what-i-learned.md`](what-i-learned.md) — lessons learned from the analysis
+- [`oee-visualization.md`](oee-visualization.md) — OEE visual documentation and implementation guidance
+- [`operational-cost-model.md`](operational-cost-model.md) — illustrative cost model with assumptions and sensitivity

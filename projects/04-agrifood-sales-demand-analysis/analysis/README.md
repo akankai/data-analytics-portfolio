@@ -1,6 +1,5 @@
-# Analysis
+# Analysis additions
 
-This directory contains the analytical documentation for Project 04:
-
-- [`findings.md`](findings.md) — detailed findings by category, product, region, channel, month, and promotion (including category-controlled promotion analysis).
-- [`methodology.md`](methodology.md) — business framing, data validation, KPI construction, SQL analysis structure, Power BI modeling, and interpretation boundaries.
+- [`statistical-analysis.md`](statistical-analysis.md) — Welch t-test and Mann-Whitney U test for promotion margin comparison, effect sizes, interpretation
+- [`what-i-learned.md`](what-i-learned.md) — lessons learned from the analysis
+- [`business-recommendations.md`](business-recommendations.md) — detailed business recommendations with data → finding → interpretation → action → impact → validation structure

@@ -1,0 +1,70 @@
+name: Portfolio CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  p05-reproducibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy
+
+      - name: Generate P05 dataset
+        run: |
+          cd projects/05-customer-segmentation-rfm-analysis
+          python scripts/generate_dataset.py
+
+      - name: Verify output files exist
+        run: |
+          test -f projects/05-customer-segmentation-rfm-analysis/data/customer_transactions.csv
+          test -f projects/05-customer-segmentation-rfm-analysis/data/customer_segmentation.db
+
+      - name: Verify baseline characteristics
+        run: |
+          python - << 'PYEOF'
+          import csv, sqlite3
+
+          # Check CSV
+          with open('projects/05-customer-segmentation-rfm-analysis/data/customer_transactions.csv', 'r') as f:
+              reader = csv.DictReader(f)
+              orders = list(reader)
+
+          assert len(orders) == 500, f"Expected 500 orders, got {len(orders)}"
+
+          # Check unique customers
+          customers = set(o['Customer_ID'] for o in orders)
+          assert len(customers) == 117, f"Expected 117 customers, got {len(customers)}"
+
+          # Check revenue
+          total_revenue = sum(float(o['Revenue_MAD']) for o in orders)
+          assert abs(total_revenue - 45664.56) < 1.0, f"Expected revenue ~45664.56, got {total_revenue:.2f}"
+
+          print(f"CSV verified: {len(orders)} orders, {len(customers)} customers, revenue={total_revenue:.2f} MAD")
+
+          # Check SQLite database
+          conn = sqlite3.connect('projects/05-customer-segmentation-rfm-analysis/data/customer_segmentation.db')
+          cursor = conn.cursor()
+          cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+          tables = [row[0] for row in cursor.fetchall()]
+          assert 'transactions' in tables, f"Missing 'transactions' table. Found: {tables}"
+          assert 'customer_rfm' in tables, f"Missing 'customer_rfm' table. Found: {tables}"
+          assert 'segment_summary' in tables, f"Missing 'segment_summary' table. Found: {tables}"
+          print(f"Database verified: tables={tables}")
+          conn.close()
+
+          print("\nAll CI checks passed.")
+          PYEOF

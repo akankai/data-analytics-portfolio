@@ -93,6 +93,8 @@ Orders counts only valid orders (1 blank record excluded). Units sold, revenue, 
 4. Use regional and channel performance to prioritize commercial attention while investigating the weaker periods highlighted by the monthly analysis.
 5. Evaluate promotional mechanics and discount depth before increasing promotion intensity; compare promotion performance by product and channel rather than relying only on the overall margin comparison.
 
+Detailed recommendations with data → finding → interpretation → action → impact → validation structure are in [`analysis/business-recommendations.md`](analysis/business-recommendations.md).
+
 ## SQL analysis
 
 The SQL layer is written for **SQLite** and is organized into nine reproducible analyses:
@@ -123,7 +125,10 @@ The scripts demonstrate aggregation, grouping, calculated margins, ranking-orien
 ├── README.md
 ├── analysis/
 │   ├── findings.md
-│   └── methodology.md
+│   ├── methodology.md
+│   ├── statistical-analysis.md
+│   ├── what-i-learned.md
+│   └── business-recommendations.md
 ├── data/
 │   └── sales_data.csv
 ├── power-bi/
@@ -138,7 +143,8 @@ The scripts demonstrate aggregation, grouping, calculated margins, ranking-orien
     ├── 05_regional_analysis.sql
     ├── 06_sales_channel_analysis.sql
     ├── 07_monthly_trends.sql
-    └── 08_promotion_analysis.sql
+    ├── 08_promotion_analysis.sql
+    └── 09_promotion_by_category.sql
 ```
 
 ## Tools & skills demonstrated

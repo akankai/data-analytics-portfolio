@@ -1,0 +1,36 @@
+Upgrade portfolio to professional, business-oriented analytics level
+
+Statistical testing:
+- P01: Pearson + Spearman correlations for quality parameters vs defect rate, with p-values, 95% CI (Fisher), ANOVA for machine differences. Viscosity is statistically significant but practically weak (r=-0.117, R2=1.4%).
+- P04: Welch t-test and Mann-Whitney U test for promotion margin difference. p<0.001, Cohen's d approx 0.85 (large effect). Category-level control confirms consistency across all 5 categories.
+
+Cost models:
+- P01: Illustrative cost-of-quality sensitivity model at 10/25/50 MAD per defective unit. Total cost range: 86,890 to 434,450 MAD. M03 accounts for 37.1% across all scenarios.
+- P02: Illustrative operational cost model (downtime at 500 MAD/hr, waste at 300 MAD/kg, lost production at 200 MAD/kg). Total approx 7.32M MAD, dominated by lost production opportunity cost.
+
+Pareto analysis (P01):
+- Defects by machine: M03 37.1%, M01 31.9%, M02 31.0% (top 2 = 69.0%)
+- Defects by product: top 3 = 65.8%, no single product dominates
+- Defects by operator: top 2 = 44.1%, relatively even distribution
+
+OEE documentation (P02):
+- New analysis/oee-visualization.md documents OEE measures, recommended visuals (KPI card, by-machine bar chart, waterfall), and implementation guidance.
+
+New analysis files:
+- P01: statistical-analysis.md, pareto-analysis.md, cost-of-quality-model.md, what-i-learned.md, data/README.md (provenance)
+- P02: oee-visualization.md, operational-cost-model.md, what-i-learned.md
+- P03: what-i-learned.md, business recommendations upgrade
+- P04: statistical-analysis.md, what-i-learned.md, business-recommendations.md
+- P05: what-i-learned.md, business-recommendations.md
+
+GitHub Actions CI:
+- .github/workflows/ci.yml: validates P05 reproducible dataset (500 orders, 117 customers, revenue approx 45,664.56 MAD, 3 expected SQLite tables)
+- .github/workflows/README.md: explains what the workflow checks
+
+Business recommendations:
+- All 5 projects upgraded with DATA -> FINDING -> INTERPRETATION -> ACTION -> IMPACT -> VALIDATION structure
+- Separated generic recommendations from detailed business-recommendations.md files
+
+GitHub metadata:
+- CI section added to root README
+- Topics recommendation: data-analytics, business-intelligence, power-bi, dax, sql, python, manufacturing, supply-chain, operations, agro-food, data-visualization, rfm-analysis

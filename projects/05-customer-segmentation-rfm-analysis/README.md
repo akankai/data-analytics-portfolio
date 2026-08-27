@@ -143,3 +143,5 @@ These are descriptive recommendations; RFM does not prove that an intervention w
 ## Limitations
 
 The dataset is synthetic. Segment thresholds are relative to this dataset and should be recalculated when the customer base or analysis period changes. RFM is descriptive and does not establish causal relationships.
+
+Detailed business recommendations are in [`analysis/business-recommendations.md`](analysis/business-recommendations.md).
