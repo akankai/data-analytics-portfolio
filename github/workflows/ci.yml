@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check Python syntax
+        run: |
+          find . -name '*.py' -not -path '*/.git/*' | while read f; do
+            python3 -m py_compile "$f" && echo "OK: $f" || echo "FAIL: $f"
+          done
+
+      - name: Check SQL files exist and are non-empty
+        run: |
+          find . -name '*.sql' -not -path '*/.git/*' -exec sh -c '
+            for f do
+              lines=$(wc -l < "$f")
+              if [ "$lines" -gt 0 ]; then
+                echo "OK: $f ($lines lines)"
+              else
+                echo "FAIL: $f (empty)"
+              fi
+            done
+          ' sh +x {} +
