@@ -28,7 +28,7 @@ Supporting KPIs include Units Sold, Average Order Value, and Promotion Effective
 
 ## 4. SQL analysis
 
-Seven focused SQL scripts were developed for layered analysis:
+Eight focused SQL scripts were developed for layered analysis:
 1. Overall performance (revenue, cost, profit, margin, volume)
 2. Category-level sales and profitability
 3. Product performance and ranking
