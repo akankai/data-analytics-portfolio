@@ -16,12 +16,13 @@ A collection of practical analytics projects focused on turning operational, man
 | **02** | [Production Performance & Efficiency Analysis](projects/02-production-performance-efficiency-analysis/) | Efficiency, yield, waste, utilization | Excel · Power BI · DAX |
 | **03** | [Inventory & Supply Chain Analysis](projects/03-inventory-supply-chain-analysis/) | Stockout risk, inventory value, suppliers, turnover | Excel · Power BI · DAX |
 | **04** | [AgriFood Sales & Demand Analysis](projects/04-agrifood-sales-demand-analysis/) | Revenue, profitability, products, regions, channels, trends, promotions | Excel · SQL · Power BI · DAX |
+| **05** | [Customer Segmentation & RFM Analysis](projects/05-customer-segmentation-rfm-analysis/) | Customer segmentation, recency-frequency-monetary profiling, retention signals | SQL · Python · Excel |
 
 ## Portfolio progression
 
 The projects are intentionally organized as a business analytics progression:
 
-**Quality → Operations → Supply Chain → Sales & Demand**
+**Quality → Operations → Supply Chain → Sales & Demand → Customer Segmentation**
 
 This reflects an interest in applying data analysis and business intelligence to operational and agro-food environments.
 
@@ -41,7 +42,8 @@ projects/
 ├── 01-manufacturing-quality-defect-analysis/
 ├── 02-production-performance-efficiency-analysis/
 ├── 03-inventory-supply-chain-analysis/
-└── 04-agrifood-sales-demand-analysis/
+├── 04-agrifood-sales-demand-analysis/
+└── 05-customer-segmentation-rfm-analysis/
 ```
 
 Each project contains documentation and the supporting files available for that project, such as source data, analysis notes, dashboard assets, Power BI reports, and SQL scripts.
