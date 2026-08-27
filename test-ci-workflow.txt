@@ -1,1 +1,12 @@
-test
+# CI Workflow (draft)
+
+This file is a placeholder for a planned GitHub Actions CI workflow.
+
+**Intended purpose:** automate basic validation of the portfolio's reproducible components:
+- Lint SQL scripts for syntax (sqlite3 .validate or equivalent)
+- Run the P05 data generator and verify it produces the documented baseline KPIs
+- Check that CSV/Excel files are readable and non-empty
+
+**Status:** draft — not yet implemented. The file is kept as a reminder of the intended automation.
+
+Last updated: August 2026

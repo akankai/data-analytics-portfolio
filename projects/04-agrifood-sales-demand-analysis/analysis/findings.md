@@ -2,7 +2,7 @@
 
 ## Dataset quality
 
-The synthetic source dataset (`data/sales_data.csv`) contains **1,002 data rows** (1,001 valid orders after excluding one blank record) and 12 fields.
+The synthetic source dataset (`data/sales_data.csv`) contains **1,001 data rows** (1,000 valid orders after excluding one blank record) and 12 fields.
 
 - Missing values in critical fields: **handled via NULL/blank checks** (see `sql/02_data_quality.sql`)
 - Duplicate rows: **0**
@@ -41,9 +41,16 @@ The synthetic source dataset (`data/sales_data.csv`) contains **1,002 data rows*
 
 ## Promotion performance
 
-- Promotional transactions show a lower observed margin (27.78%) than non-promotional transactions (33.02%).
+- Promotional transactions show a lower observed margin (**27.78%**) than non-promotional transactions (**33.02%**).
 - This is an association in the observed data, not proof that promotions caused the lower margin.
-- Promotion analysis is in `sql/08_promotion_analysis.sql`.
+- **Promotion-by-category analysis** (see `sql/09_promotion_by_category.sql`) shows that the margin gap is consistent across all five categories: in every category, promoted transactions have a lower margin than non-promoted transactions. This means the overall gap is not driven by promotion concentration in low-margin categories.
+  - Oils: 28.97% non-promo vs. 23.27% promo (−5.70 pp)
+  - Dairy: 32.08% non-promo vs. 26.73% promo (−5.35 pp)
+  - Grains: 37.19% non-promo vs. 32.93% promo (−4.26 pp)
+  - Beverages: 39.49% non-promo vs. 35.32% promo (−4.17 pp)
+  - Canned Goods: 42.69% non-promo vs. 37.93% promo (−4.76 pp)
+- The consistency across categories suggests the margin reduction is a genuine effect of the promotional pricing, but the dataset does not contain discount depth, advertising spend, or incremental volume data to determine whether the lost margin is offset by higher volume or customer acquisition.
+- Promotion analysis is in `sql/08_promotion_analysis.sql` and the category-controlled version in `sql/09_promotion_by_category.sql`.
 
 ## Notes
 

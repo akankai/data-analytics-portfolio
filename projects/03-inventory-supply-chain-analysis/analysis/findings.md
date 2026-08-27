@@ -77,7 +77,21 @@ Dry Goods carry the largest inventory value, while Dairy has the highest low-sto
 
 The dashboard reports an **observed inventory turnover ratio of 0.59×** using cost-weighted sold value divided by cost-weighted average inventory based on opening and closing stock.
 
-Because the source is a synthetic observation-level dataset rather than a formal accounting ledger, this should not be interpreted as a standardized annual financial turnover KPI.
+Because the source is a synthetic observation-level dataset rather than a formal accounting ledger, this should not be interpreted as a standardized annual financial turnover KPI. It represents the ratio of cost-weighted movement to average inventory holding across the 600 observation records.
+
+## 7. ABC inventory classification
+
+An ABC analysis based on inventory value (closing stock × unit cost) shows the concentration of working capital:
+
+| Class | Criteria | Products | Inventory Value | Share |
+|---|---|---|---|---|
+| **A** | Top ~20% of value | Olive Oil 1L | ~428K MAD | ~28.5% |
+| **B** | Next ~30% of value | Basmati Rice 5kg, Milk Powder 500g, Couscous 1kg | ~538K MAD | ~35.8% |
+| **C** | Bottom ~50% of value | Canned Tuna 160g, Sugar 1kg, Tomato Sauce 500g, Pasta 500g, Flour 1kg, Canned Peas 400g | ~536K MAD | ~35.7% |
+
+**Interpretation:** A single product (Olive Oil 1L) accounts for 28.5% of total inventory value, making it the single most important item for working-capital management. The next three products bring the top four items to 64.3% of total value. This is a moderately concentrated ABC pattern. Class A and B items should receive the most attention in replenishment policy review, stockout prevention, and demand forecasting.
+
+The ABC classification is based on inventory value at the observation level and would need to be recalculated with formal period-end balances in a production deployment.
 
 ## Recommended actions
 

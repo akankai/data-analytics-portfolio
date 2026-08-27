@@ -2,7 +2,9 @@
 
 ## Source
 
-This project uses a **synthetic dataset created specifically for this portfolio project**. It does not contain confidential company information.
+This project uses a **synthetic dataset** stored as [`production_data.csv`](production_data.csv). It was created specifically for this portfolio project and does not contain confidential company information.
+
+The dataset can be used directly with Power BI, Excel, or any analytics tool.
 
 ## Scope
 

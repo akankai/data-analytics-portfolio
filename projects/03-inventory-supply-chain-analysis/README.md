@@ -77,7 +77,7 @@ Interactive filters are provided for **Category, Supplier and Warehouse**.
 2. **Low-stock exposure is high at 82.83%** of records (497 of 600), indicating that replenishment thresholds should be reviewed.
 3. **Stockout rate is 4.83%** (29 of 600 records). Canned Peas 400g has the highest product-level stockout rate at 13.33%, followed by Flour 1kg at 10.00%.
 4. **On-time delivery is 87.00% overall.** Sahara Trading is the weakest supplier at 76.52%, compared with 92.00% for Rif Distribution.
-5. **Inventory turnover is 0.59×** on the dataset's observed period and definition, indicating that inventory moved relatively slowly compared with the average inventory base used in the calculation.
+5. **Inventory turnover is 0.59×** on the dataset's observed period and definition. This is calculated as cost-weighted units sold divided by cost-weighted average inventory (based on opening and closing stock) across the 600 monthly observation records. Because the source is an observation-level dataset rather than a formal accounting ledger with beginning and ending period inventory, this should be interpreted as an **observed turnover ratio for the dataset period**, not as a standardized annual financial turnover KPI. In a real deployment, turnover would be calculated using beginning-of-period and end-of-period inventory balances over a defined fiscal period.
 6. **Dry Goods carry the largest inventory value** at approximately 669.2K MAD, while Dairy has the highest category-level low-stock rate at 90.0%.
 
 See [analytical findings](analysis/findings.md) for the detailed breakdown and [methodology](analysis/methodology.md) for calculation notes.

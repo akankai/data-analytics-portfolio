@@ -18,6 +18,20 @@ The source workbook contains 500 synthetic batch-level records. Data validation 
 
 KPIs are calculated in Power BI using aggregated numerators and denominators rather than averaging row-level percentages. This keeps the measures correct when the report is filtered by month, machine, product or shift.
 
+### OEE (Overall Equipment Effectiveness)
+
+OEE is the product of three component ratios:
+
+- **Availability** = Operating Time / Available Time
+- **Performance** = Actual Production / Planned Production
+- **Quality** = Good Output / Actual Production
+- **OEE** = Availability × Performance × Quality
+
+This decomposition separates the three types of production loss:
+- **Availability loss:** downtime and stoppages (machine not running)
+- **Performance loss:** running slower than planned or idle time within operating periods
+- **Quality loss:** defects and scrap (good output below actual output)
+
 ### Yield
 
 `Good Output ÷ Input Quantity`

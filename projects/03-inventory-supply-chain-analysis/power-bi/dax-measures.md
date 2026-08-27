@@ -50,15 +50,19 @@ DIVIDE(
 
 ```DAX
 On-Time Delivery Rate =
-AVERAGEX(
-    Inventory_Data,
-    IF(
-        Inventory_Data[Late_Delivery] = 0,
-        1,
-        0
-    )
+DIVIDE(
+    COUNTROWS(
+        FILTER(
+            Inventory_Data,
+            Inventory_Data[Late_Delivery] = 0
+        )
+    ),
+    COUNTROWS(Inventory_Data),
+    0
 )
 ```
+
+This measure counts records where `Late_Delivery = 0` and divides by the total record count. It is consistent with the pattern used for Stockout Rate and Low Stock Rate.
 
 ## Inventory Turnover
 

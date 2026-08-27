@@ -1,0 +1,501 @@
+Order_ID,Customer_ID,Order_Date,Product,Category,Country,Sales_Channel,Quantity,Unit_Price_MAD,Discount_Rate,Revenue_MAD,Cost_MAD,Profit_MAD
+O100099,10050,2025-01-02,Dates 1kg,Pantry,Morocco,Retail,1,57.34,0.05,54.47,31.85,22.62
+O100022,10112,2025-01-02,Tuna 160g,Canned Goods,France,Supermarket,4,9.28,0.0,37.12,26.69,10.43
+O100406,10114,2025-01-03,Tomato Sauce,Canned Goods,Morocco,Supermarket,2,12.66,0.1,22.79,15.76,7.03
+O100274,10003,2025-01-05,Couscous 5kg,Grains,Morocco,Online,2,72.81,0.0,145.62,93.36,52.26
+O100371,10079,2025-01-05,Cheese 500g,Dairy,Morocco,Online,2,41.14,0.0,82.28,59.75,22.53
+O100350,10051,2025-01-06,Couscous 5kg,Grains,Spain,Supermarket,5,76.81,0.05,364.85,268.69,96.16
+O100183,10064,2025-01-08,Flour 5kg,Baking,Morocco,Supermarket,4,46.45,0.05,176.51,116.5,60.01
+O100247,10083,2025-01-09,Couscous 5kg,Grains,Morocco,Retail,1,77.3,0.0,77.3,52.46,24.84
+O100105,10110,2025-01-09,Olive Oil 1L,Oils,Morocco,Supermarket,2,35.12,0.05,66.73,40.67,26.06
+O100064,10093,2025-01-09,Milk 1L,Dairy,Spain,Retail,2,8.62,0.05,16.38,10.81,5.57
+O100280,10039,2025-01-10,Tomato Sauce,Canned Goods,Morocco,Supermarket,4,11.21,0.0,44.84,26.04,18.8
+O100463,10051,2025-01-11,Flour 5kg,Baking,Morocco,Supermarket,3,48.11,0.15,122.68,78.31,44.37
+O100277,10038,2025-01-12,Honey 500g,Pantry,Morocco,Supermarket,3,39.6,0.05,112.86,75.95,36.91
+O100390,10011,2025-01-12,Honey 500g,Pantry,Morocco,Online,1,35.22,0.0,35.22,23.57,11.65
+O100021,10060,2025-01-12,Flour 5kg,Baking,Morocco,Retail,1,50.55,0.0,50.55,34.5,16.05
+O100116,10059,2025-01-13,Olive Oil 5L,Oils,Morocco,Retail,1,143.56,0.15,122.03,75.58,46.45
+O100393,10036,2025-01-14,Milk 1L,Dairy,Morocco,Retail,4,7.59,0.0,30.36,19.93,10.43
+O100365,10052,2025-01-15,Tomato Sauce,Canned Goods,Spain,Supermarket,4,11.83,0.0,47.32,31.77,15.55
+O100015,10005,2025-01-15,Couscous 5kg,Grains,Morocco,Supermarket,1,67.09,0.0,67.09,45.14,21.95
+O100377,10076,2025-01-16,Couscous 1kg,Grains,Morocco,Supermarket,1,18.82,0.0,18.82,12.53,6.29
+O100359,10052,2025-01-16,Flour 1kg,Baking,Morocco,Supermarket,3,11.63,0.1,31.4,18.53,12.87
+O100278,10058,2025-01-16,Tuna 160g,Canned Goods,Morocco,Retail,1,9.34,0.2,7.47,4.35,3.12
+O100317,10063,2025-01-17,Cheese 500g,Dairy,Morocco,Online,3,41.91,0.0,125.73,78.48,47.25
+O100252,10047,2025-01-18,Olive Oil 5L,Oils,Morocco,Online,3,164.65,0.0,493.95,353.0,140.95
+O100002,10012,2025-01-18,Dates 1kg,Pantry,Spain,Retail,1,57.29,0.05,54.43,39.15,15.28
+O100074,10021,2025-01-19,Couscous 1kg,Grains,France,Supermarket,3,17.7,0.1,47.79,34.88,12.91
+O100265,10118,2025-01-19,Couscous 5kg,Grains,Morocco,Supermarket,1,68.74,0.0,68.74,51.55,17.19
+O100432,10026,2025-01-19,Tuna 160g,Canned Goods,France,Supermarket,3,8.85,0.0,26.55,16.58,9.97
+O100399,10098,2025-01-20,Milk 1L,Dairy,Morocco,Retail,2,7.69,0.05,14.61,10.54,4.07
+O100437,10060,2025-01-20,Honey 500g,Pantry,Morocco,Supermarket,3,36.13,0.0,108.39,72.37,36.02
+O100089,10063,2025-01-21,Couscous 1kg,Grains,Spain,Retail,2,17.42,0.05,33.1,20.42,12.68
+O100234,10059,2025-01-22,Tomato Sauce,Canned Goods,Morocco,Online,2,12.55,0.2,20.08,13.3,6.78
+O100087,10084,2025-01-22,Tuna 160g,Canned Goods,Morocco,Supermarket,1,9.23,0.0,9.23,6.48,2.75
+O100338,10094,2025-01-23,Tuna 160g,Canned Goods,France,Supermarket,2,8.54,0.05,16.23,11.72,4.51
+O100385,10096,2025-01-24,Tuna 160g,Canned Goods,Morocco,Supermarket,3,8.44,0.0,25.32,16.1,9.22
+O100123,10067,2025-01-25,Dates 1kg,Pantry,Belgium,Online,2,52.86,0.05,100.43,59.17,41.26
+O100243,10013,2025-01-25,Dates 1kg,Pantry,Morocco,Supermarket,2,51.39,0.0,102.78,77.85,24.93
+O100258,10049,2025-01-26,Olive Oil 5L,Oils,Morocco,Online,3,155.05,0.1,418.64,305.22,113.42
+O100402,10021,2025-01-28,Flour 1kg,Baking,Morocco,Supermarket,2,10.77,0.0,21.54,12.52,9.02
+O100364,10005,2025-01-28,Milk 1L,Dairy,Belgium,Online,3,8.78,0.05,25.02,17.71,7.31
+O100451,10099,2025-01-29,Cheese 500g,Dairy,Spain,Supermarket,3,45.91,0.0,137.73,100.61,37.12
+O100167,10048,2025-01-29,Honey 500g,Pantry,Spain,Supermarket,3,37.06,0.0,111.18,78.27,32.91
+O100191,10052,2025-01-29,Flour 5kg,Baking,Morocco,Supermarket,4,50.49,0.05,191.86,125.69,66.17
+O100001,10079,2025-01-31,Cheese 500g,Dairy,Morocco,Supermarket,2,44.7,0.15,75.99,55.33,20.66
+O100331,10106,2025-02-01,Flour 1kg,Baking,France,Supermarket,1,10.14,0.2,8.11,5.03,3.08
+O100480,10060,2025-02-01,Tomato Sauce,Canned Goods,Morocco,Supermarket,2,12.3,0.0,24.6,15.92,8.68
+O100325,10086,2025-02-02,Flour 1kg,Baking,Morocco,Retail,5,10.52,0.05,49.97,32.76,17.21
+O100060,10107,2025-02-03,Flour 5kg,Baking,Morocco,Supermarket,3,50.86,0.05,144.95,84.59,60.36
+O100218,10012,2025-02-04,Tuna 160g,Canned Goods,Morocco,Retail,5,9.53,0.0,47.65,33.27,14.38
+O100032,10019,2025-02-04,Dates 1kg,Pantry,Belgium,Supermarket,4,54.51,0.05,207.14,125.71,81.43
+O100323,10027,2025-02-04,Couscous 1kg,Grains,Morocco,Retail,2,17.63,0.0,35.26,21.86,13.4
+O100076,10075,2025-02-05,Honey 500g,Pantry,Morocco,Supermarket,1,38.61,0.0,38.61,22.76,15.85
+O100306,10032,2025-02-06,Cheese 500g,Dairy,Morocco,Retail,2,39.19,0.15,66.62,43.98,22.64
+O100090,10085,2025-02-06,Flour 1kg,Baking,France,Retail,1,10.35,0.05,9.83,5.92,3.91
+O100202,10042,2025-02-06,Flour 1kg,Baking,Morocco,Supermarket,3,11.99,0.0,35.97,24.76,11.21
+O100039,10093,2025-02-06,Couscous 1kg,Grains,Morocco,Online,3,19.41,0.0,58.23,35.89,22.34
+O100389,10017,2025-02-07,Couscous 1kg,Grains,Morocco,Supermarket,2,18.74,0.1,33.73,23.14,10.59
+O100266,10086,2025-02-08,Dates 1kg,Pantry,France,Supermarket,2,58.68,0.0,117.36,84.39,32.97
+O100227,10033,2025-02-08,Flour 1kg,Baking,Spain,Supermarket,5,11.02,0.1,49.59,33.07,16.52
+O100430,10059,2025-02-08,Couscous 1kg,Grains,Morocco,Retail,5,18.5,0.0,92.5,63.46,29.04
+O100324,10035,2025-02-09,Tomato Sauce,Canned Goods,Morocco,Retail,1,11.36,0.2,9.09,6.28,2.81
+O100214,10018,2025-02-09,Dates 1kg,Pantry,Morocco,Supermarket,1,53.31,0.0,53.31,33.6,19.71
+O100373,10040,2025-02-10,Couscous 1kg,Grains,Belgium,Supermarket,2,16.88,0.0,33.76,20.39,13.37
+O100016,10114,2025-02-10,Honey 500g,Pantry,Morocco,Supermarket,2,35.37,0.05,67.2,41.48,25.72
+O100041,10109,2025-02-10,Honey 500g,Pantry,Spain,Retail,2,36.98,0.1,66.56,49.11,17.45
+O100341,10020,2025-02-10,Milk 1L,Dairy,Morocco,Online,1,8.44,0.0,8.44,6.25,2.19
+O100128,10048,2025-02-10,Milk 1L,Dairy,Morocco,Retail,5,7.58,0.0,37.9,23.97,13.93
+O100228,10074,2025-02-11,Honey 500g,Pantry,Morocco,Supermarket,4,41.44,0.0,165.76,106.74,59.02
+O100312,10085,2025-02-13,Cheese 500g,Dairy,Morocco,Supermarket,1,41.13,0.05,39.07,23.95,15.12
+O100152,10008,2025-02-13,Tuna 160g,Canned Goods,Morocco,Retail,1,9.09,0.0,9.09,6.23,2.86
+O100322,10089,2025-02-13,Dates 1kg,Pantry,Morocco,Supermarket,1,53.32,0.0,53.32,36.0,17.32
+O100492,10115,2025-02-13,Couscous 1kg,Grains,Morocco,Supermarket,3,17.47,0.05,49.79,37.03,12.76
+O100049,10113,2025-02-15,Tomato Sauce,Canned Goods,Morocco,Supermarket,5,12.08,0.15,51.34,31.29,20.05
+O100254,10022,2025-02-15,Milk 1L,Dairy,Spain,Retail,2,8.22,0.1,14.8,10.59,4.21
+O100336,10117,2025-02-16,Couscous 5kg,Grains,Morocco,Retail,4,72.79,0.1,262.04,182.83,79.21
+O100235,10066,2025-02-16,Olive Oil 1L,Oils,Morocco,Online,3,35.4,0.05,100.89,74.3,26.59
+O100164,10071,2025-02-18,Olive Oil 1L,Oils,Spain,Online,4,35.86,0.1,129.1,89.54,39.56
+O100301,10005,2025-02-19,Couscous 5kg,Grains,Morocco,Supermarket,2,77.81,0.0,155.62,98.63,56.99
+O100372,10080,2025-02-20,Couscous 1kg,Grains,Morocco,Supermarket,3,18.75,0.0,56.25,39.19,17.06
+O100299,10109,2025-02-20,Flour 5kg,Baking,Morocco,Online,4,47.08,0.0,188.32,142.81,45.51
+O100204,10100,2025-02-23,Milk 1L,Dairy,France,Supermarket,2,8.78,0.0,17.56,11.62,5.94
+O100326,10117,2025-02-24,Couscous 5kg,Grains,Morocco,Retail,5,71.15,0.05,337.96,254.9,83.06
+O100052,10034,2025-02-25,Honey 500g,Pantry,France,Online,4,37.3,0.0,149.2,95.73,53.47
+O100070,10112,2025-02-26,Dates 1kg,Pantry,Morocco,Supermarket,2,56.73,0.15,96.44,72.96,23.48
+O100494,10037,2025-02-27,Olive Oil 1L,Oils,Morocco,Online,2,34.53,0.0,69.06,49.12,19.94
+O100455,10063,2025-02-27,Olive Oil 1L,Oils,Morocco,Supermarket,3,36.17,0.15,92.23,66.74,25.49
+O100484,10115,2025-02-28,Tomato Sauce,Canned Goods,Morocco,Online,3,11.61,0.0,34.83,26.03,8.8
+O100281,10109,2025-03-02,Couscous 1kg,Grains,Morocco,Supermarket,2,17.86,0.1,32.15,23.82,8.33
+O100163,10033,2025-03-03,Flour 5kg,Baking,Belgium,Supermarket,1,45.87,0.0,45.87,27.19,18.68
+O100189,10019,2025-03-06,Olive Oil 1L,Oils,Morocco,Retail,4,38.03,0.0,152.12,113.68,38.44
+O100046,10098,2025-03-07,Cheese 500g,Dairy,France,Retail,2,42.04,0.0,84.08,59.52,24.56
+O100209,10037,2025-03-08,Tuna 160g,Canned Goods,Morocco,Online,3,8.71,0.0,26.13,16.8,9.33
+O100362,10074,2025-03-09,Tomato Sauce,Canned Goods,Morocco,Retail,2,11.19,0.0,22.38,16.67,5.71
+O100378,10047,2025-03-10,Tuna 160g,Canned Goods,Morocco,Online,3,9.82,0.0,29.46,22.18,7.28
+O100403,10075,2025-03-10,Flour 5kg,Baking,Morocco,Retail,1,48.29,0.1,43.46,27.84,15.62
+O100181,10018,2025-03-10,Tuna 160g,Canned Goods,Morocco,Supermarket,4,9.0,0.0,36.0,25.8,10.2
+O100006,10043,2025-03-10,Honey 500g,Pantry,Belgium,Supermarket,1,37.3,0.05,35.43,25.7,9.73
+O100112,10115,2025-03-11,Flour 5kg,Baking,Morocco,Retail,2,53.59,0.0,107.18,78.9,28.28
+O100229,10014,2025-03-11,Couscous 5kg,Grains,Morocco,Online,4,69.52,0.05,264.18,156.42,107.76
+O100144,10109,2025-03-13,Couscous 1kg,Grains,Morocco,Retail,2,18.11,0.1,32.6,22.68,9.92
+O100479,10076,2025-03-13,Flour 1kg,Baking,Morocco,Online,1,10.52,0.0,10.52,6.37,4.15
+O100033,10069,2025-03-14,Flour 1kg,Baking,Morocco,Retail,4,11.93,0.0,47.72,31.71,16.01
+O100447,10009,2025-03-15,Milk 1L,Dairy,Morocco,Supermarket,1,8.1,0.0,8.1,5.79,2.31
+O100185,10059,2025-03-16,Honey 500g,Pantry,Morocco,Supermarket,3,39.92,0.05,113.77,85.51,28.26
+O100088,10018,2025-03-17,Tomato Sauce,Canned Goods,Morocco,Supermarket,2,11.42,0.0,22.84,16.78,6.06
+O100045,10048,2025-03-17,Olive Oil 1L,Oils,Morocco,Retail,4,32.96,0.1,118.66,70.97,47.69
+O100472,10039,2025-03-17,Olive Oil 1L,Oils,Spain,Online,2,35.58,0.1,64.04,38.74,25.3
+O100149,10005,2025-03-18,Olive Oil 5L,Oils,Morocco,Retail,4,160.98,0.1,579.53,359.88,219.65
+O100433,10109,2025-03-18,Dates 1kg,Pantry,Morocco,Supermarket,2,52.61,0.0,105.22,62.6,42.62
+O100431,10021,2025-03-21,Olive Oil 1L,Oils,France,Supermarket,3,35.57,0.0,106.71,62.47,44.24
+O100068,10090,2025-03-21,Couscous 5kg,Grains,Morocco,Retail,3,77.39,0.0,232.17,134.97,97.2
+O100387,10099,2025-03-23,Milk 1L,Dairy,Morocco,Supermarket,4,7.76,0.0,31.04,19.36,11.68
+O100170,10099,2025-03-23,Dates 1kg,Pantry,Morocco,Retail,2,57.95,0.0,115.9,84.53,31.37
+O100271,10018,2025-03-24,Olive Oil 1L,Oils,Morocco,Online,2,33.56,0.0,67.12,45.74,21.38
+O100427,10011,2025-03-24,Couscous 5kg,Grains,Morocco,Online,3,70.48,0.05,200.87,148.69,52.18
+O100148,10017,2025-03-24,Dates 1kg,Pantry,Morocco,Retail,4,54.55,0.0,218.2,132.92,85.28
+O100121,10096,2025-03-25,Flour 5kg,Baking,Morocco,Online,3,46.57,0.15,118.75,72.89,45.86
+O100286,10037,2025-03-25,Tomato Sauce,Canned Goods,Morocco,Supermarket,4,12.27,0.0,49.08,33.42,15.66
+O100318,10090,2025-03-26,Honey 500g,Pantry,Morocco,Retail,1,40.21,0.0,40.21,26.07,14.14
+O100482,10108,2025-03-28,Olive Oil 1L,Oils,Morocco,Retail,1,32.8,0.0,32.8,21.03,11.77
+O100287,10099,2025-03-30,Flour 1kg,Baking,Morocco,Supermarket,1,11.1,0.1,9.99,6.93,3.06
+O100160,10007,2025-03-31,Flour 5kg,Baking,Morocco,Retail,1,45.32,0.15,38.52,27.26,11.26
+O100328,10009,2025-03-31,Flour 5kg,Baking,Morocco,Supermarket,4,45.38,0.05,172.44,131.04,41.4
+O100255,10020,2025-04-01,Couscous 1kg,Grains,Morocco,Retail,2,17.52,0.0,35.04,26.2,8.84
+O100334,10013,2025-04-01,Couscous 5kg,Grains,Morocco,Supermarket,4,76.57,0.15,260.34,155.72,104.62
+O100347,10112,2025-04-01,Flour 5kg,Baking,Morocco,Online,4,45.94,0.05,174.57,125.85,48.72
+O100449,10068,2025-04-01,Couscous 5kg,Grains,Morocco,Online,1,76.48,0.0,76.48,49.0,27.48
+O100467,10044,2025-04-03,Tuna 160g,Canned Goods,Spain,Online,1,9.35,0.0,9.35,6.3,3.05
+O100050,10037,2025-04-03,Olive Oil 5L,Oils,Morocco,Online,1,141.21,0.15,120.03,76.56,43.47
+O100084,10003,2025-04-05,Cheese 500g,Dairy,Morocco,Supermarket,2,44.37,0.1,79.87,54.39,25.48
+O100159,10100,2025-04-05,Milk 1L,Dairy,Morocco,Retail,4,8.43,0.1,30.35,18.78,11.57
+O100354,10036,2025-04-05,Cheese 500g,Dairy,Morocco,Online,1,45.85,0.0,45.85,34.51,11.34
+O100448,10047,2025-04-06,Tuna 160g,Canned Goods,Morocco,Supermarket,2,9.78,0.0,19.56,14.82,4.74
+O100166,10008,2025-04-06,Flour 5kg,Baking,Morocco,Retail,1,47.25,0.1,42.52,27.19,15.33
+O100177,10096,2025-04-06,Flour 1kg,Baking,Morocco,Retail,2,12.09,0.2,19.34,13.05,6.29
+O100141,10098,2025-04-07,Milk 1L,Dairy,Morocco,Supermarket,2,7.98,0.0,15.96,11.49,4.47
+O100224,10094,2025-04-07,Couscous 5kg,Grains,Morocco,Online,4,67.73,0.05,257.37,182.68,74.69
+O100458,10100,2025-04-09,Couscous 5kg,Grains,Morocco,Supermarket,2,78.37,0.05,148.9,99.12,49.78
+O100376,10053,2025-04-09,Tomato Sauce,Canned Goods,Morocco,Online,2,11.12,0.1,20.02,11.98,8.04
+O100302,10001,2025-04-10,Milk 1L,Dairy,Morocco,Supermarket,2,7.62,0.0,15.24,10.78,4.46
+O100357,10075,2025-04-10,Dates 1kg,Pantry,Morocco,Supermarket,1,53.89,0.0,53.89,35.66,18.23
+O100342,10113,2025-04-12,Milk 1L,Dairy,Morocco,Supermarket,3,8.73,0.0,26.19,16.73,9.46
+O100010,10023,2025-04-14,Dates 1kg,Pantry,Morocco,Retail,4,52.93,0.0,211.72,157.44,54.28
+O100012,10072,2025-04-14,Olive Oil 1L,Oils,Morocco,Retail,2,37.19,0.1,66.94,44.11,22.83
+O100332,10086,2025-04-14,Cheese 500g,Dairy,Spain,Supermarket,2,41.09,0.1,73.96,55.65,18.31
+O100062,10065,2025-04-14,Couscous 5kg,Grains,Morocco,Retail,3,78.04,0.0,234.12,158.63,75.49
+O100367,10029,2025-04-16,Milk 1L,Dairy,Morocco,Supermarket,1,7.4,0.05,7.03,4.96,2.07
+O100282,10094,2025-04-18,Flour 5kg,Baking,Belgium,Supermarket,4,45.86,0.0,183.44,137.52,45.92
+O100436,10037,2025-04-19,Flour 1kg,Baking,Morocco,Supermarket,2,11.69,0.1,21.04,13.42,7.62
+O100417,10022,2025-04-21,Couscous 1kg,Grains,Morocco,Online,4,18.32,0.1,65.95,40.92,25.03
+O100360,10051,2025-04-21,Olive Oil 1L,Oils,Morocco,Retail,1,38.47,0.0,38.47,28.04,10.43
+O100150,10009,2025-04-22,Milk 1L,Dairy,Spain,Retail,3,8.45,0.0,25.35,18.27,7.08
+O100130,10080,2025-04-23,Couscous 1kg,Grains,Morocco,Retail,1,18.34,0.05,17.42,10.32,7.1
+O100239,10075,2025-04-23,Couscous 1kg,Grains,Morocco,Retail,2,16.69,0.05,31.71,18.64,13.07
+O100468,10026,2025-04-24,Flour 1kg,Baking,France,Retail,2,10.38,0.0,20.76,12.58,8.18
+O100392,10009,2025-04-25,Olive Oil 5L,Oils,Morocco,Retail,2,156.74,0.05,297.81,179.97,117.84
+O100486,10103,2025-04-25,Tomato Sauce,Canned Goods,Morocco,Online,4,12.76,0.15,43.38,30.25,13.13
+O100488,10088,2025-04-25,Cheese 500g,Dairy,Morocco,Supermarket,4,41.5,0.1,149.4,98.55,50.85
+O100182,10068,2025-04-26,Dates 1kg,Pantry,Morocco,Online,1,57.09,0.0,57.09,33.78,23.31
+O100383,10063,2025-04-27,Tuna 160g,Canned Goods,Morocco,Supermarket,2,9.9,0.05,18.81,11.07,7.74
+O100231,10024,2025-04-27,Honey 500g,Pantry,Morocco,Supermarket,2,38.63,0.0,77.26,45.65,31.61
+O100075,10025,2025-04-28,Tomato Sauce,Canned Goods,Morocco,Retail,3,12.77,0.0,38.31,28.38,9.93
+O100422,10099,2025-04-28,Couscous 5kg,Grains,Morocco,Retail,2,76.87,0.0,153.74,109.79,43.95
+O100065,10081,2025-04-28,Couscous 5kg,Grains,Morocco,Retail,2,72.59,0.05,137.92,88.29,49.63
+O100259,10088,2025-04-28,Tuna 160g,Canned Goods,Morocco,Retail,3,9.83,0.05,28.02,19.6,8.42
+O100319,10077,2025-04-28,Tomato Sauce,Canned Goods,Morocco,Online,3,13.07,0.05,37.25,24.5,12.75
+O100453,10093,2025-04-29,Flour 1kg,Baking,Morocco,Retail,1,10.42,0.05,9.9,6.91,2.99
+O100404,10017,2025-04-30,Couscous 5kg,Grains,Morocco,Retail,4,75.21,0.05,285.8,165.82,119.98
+O100018,10094,2025-05-02,Olive Oil 1L,Oils,Morocco,Supermarket,2,37.12,0.1,66.82,41.89,24.93
+O100230,10075,2025-05-04,Olive Oil 5L,Oils,Spain,Supermarket,3,140.54,0.15,358.38,256.15,102.23
+O100047,10097,2025-05-04,Flour 1kg,Baking,Belgium,Retail,2,10.61,0.0,21.22,12.92,8.3
+O100196,10048,2025-05-05,Honey 500g,Pantry,Morocco,Retail,1,38.21,0.1,34.39,21.71,12.68
+O100107,10069,2025-05-06,Tuna 160g,Canned Goods,Belgium,Supermarket,1,9.81,0.0,9.81,7.12,2.69
+O100138,10010,2025-05-06,Tuna 160g,Canned Goods,Morocco,Retail,2,8.76,0.0,17.52,10.78,6.74
+O100025,10035,2025-05-07,Flour 1kg,Baking,Morocco,Supermarket,1,10.45,0.05,9.93,7.03,2.9
+O100162,10031,2025-05-08,Olive Oil 1L,Oils,Spain,Supermarket,2,33.09,0.15,56.25,41.77,14.48
+O100158,10104,2025-05-08,Tuna 160g,Canned Goods,Morocco,Retail,4,8.33,0.0,33.32,24.99,8.33
+O100438,10073,2025-05-08,Cheese 500g,Dairy,Morocco,Supermarket,5,43.29,0.0,216.45,127.06,89.39
+O100005,10061,2025-05-08,Milk 1L,Dairy,Morocco,Retail,4,7.79,0.05,29.6,19.28,10.32
+O100309,10096,2025-05-09,Couscous 1kg,Grains,Spain,Supermarket,1,18.8,0.05,17.86,12.09,5.77
+O100311,10093,2025-05-09,Honey 500g,Pantry,Morocco,Online,3,40.23,0.2,96.55,64.56,31.99
+O100370,10085,2025-05-09,Cheese 500g,Dairy,Morocco,Supermarket,3,44.62,0.05,127.17,77.11,50.06
+O100242,10017,2025-05-09,Flour 5kg,Baking,Spain,Supermarket,2,46.62,0.1,83.92,56.17,27.75
+O100222,10096,2025-05-09,Flour 5kg,Baking,Belgium,Retail,2,48.73,0.1,87.71,54.92,32.79
+O100374,10095,2025-05-10,Couscous 1kg,Grains,Morocco,Supermarket,2,19.47,0.05,36.99,27.57,9.42
+O100483,10086,2025-05-11,Couscous 5kg,Grains,Morocco,Supermarket,4,69.36,0.0,277.44,170.11,107.33
+O100210,10089,2025-05-12,Cheese 500g,Dairy,Morocco,Supermarket,4,42.96,0.0,171.84,127.51,44.33
+O100428,10091,2025-05-14,Tuna 160g,Canned Goods,Morocco,Online,1,8.8,0.15,7.48,5.18,2.3
+O100126,10075,2025-05-16,Flour 1kg,Baking,Morocco,Supermarket,2,11.73,0.0,23.46,16.72,6.74
+O100275,10057,2025-05-17,Honey 500g,Pantry,Morocco,Online,5,36.14,0.0,180.7,114.37,66.33
+O100201,10060,2025-05-18,Olive Oil 1L,Oils,Morocco,Supermarket,2,35.94,0.0,71.88,48.36,23.52
+O100034,10016,2025-05-19,Cheese 500g,Dairy,Morocco,Supermarket,2,44.25,0.05,84.08,60.62,23.46
+O100093,10097,2025-05-19,Dates 1kg,Pantry,Morocco,Supermarket,2,56.39,0.0,112.78,71.93,40.85
+O100232,10070,2025-05-21,Cheese 500g,Dairy,Morocco,Online,1,40.62,0.05,38.59,25.08,13.51
+O100215,10075,2025-05-21,Tuna 160g,Canned Goods,Morocco,Retail,2,8.81,0.0,17.62,10.3,7.32
+O100097,10018,2025-05-23,Dates 1kg,Pantry,France,Retail,1,56.17,0.1,50.55,31.66,18.89
+O100115,10097,2025-05-23,Couscous 1kg,Grains,Spain,Online,1,16.81,0.1,15.13,9.99,5.14
+O100055,10007,2025-05-24,Tuna 160g,Canned Goods,Morocco,Online,4,8.8,0.05,33.44,22.17,11.27
+O100038,10088,2025-05-24,Tomato Sauce,Canned Goods,Belgium,Supermarket,1,11.39,0.05,10.82,6.94,3.88
+O100477,10077,2025-05-25,Olive Oil 1L,Oils,Morocco,Supermarket,2,33.02,0.05,62.74,39.48,23.26
+O100051,10065,2025-05-27,Dates 1kg,Pantry,Morocco,Online,2,52.45,0.2,83.92,61.03,22.89
+O100139,10074,2025-05-28,Flour 5kg,Baking,France,Supermarket,4,51.09,0.0,204.36,124.98,79.38
+O100261,10112,2025-05-28,Tuna 160g,Canned Goods,Morocco,Retail,2,9.23,0.05,17.54,12.45,5.09
+O100007,10020,2025-05-29,Flour 5kg,Baking,Morocco,Supermarket,1,50.15,0.2,40.12,28.33,11.79
+O100465,10077,2025-05-31,Cheese 500g,Dairy,Morocco,Retail,1,45.84,0.0,45.84,30.04,15.8
+O100145,10022,2025-05-31,Olive Oil 5L,Oils,Morocco,Supermarket,2,162.93,0.0,325.86,231.81,94.05
+O100320,10100,2025-06-01,Dates 1kg,Pantry,Morocco,Supermarket,2,53.75,0.0,107.5,70.38,37.12
+O100454,10100,2025-06-01,Cheese 500g,Dairy,Morocco,Supermarket,2,38.76,0.0,77.52,49.32,28.2
+O100256,10112,2025-06-02,Tuna 160g,Canned Goods,Morocco,Supermarket,2,9.07,0.0,18.14,11.29,6.85
+O100017,10060,2025-06-02,Couscous 1kg,Grains,Morocco,Online,1,16.92,0.1,15.23,8.84,6.39
+O100104,10037,2025-06-02,Olive Oil 5L,Oils,Morocco,Retail,1,159.46,0.1,143.51,90.58,52.93
+O100381,10106,2025-06-03,Olive Oil 5L,Oils,Morocco,Online,1,149.7,0.0,149.7,106.24,43.46
+O100435,10031,2025-06-03,Couscous 5kg,Grains,Morocco,Online,1,67.91,0.0,67.91,46.43,21.48
+O100072,10018,2025-06-04,Olive Oil 5L,Oils,Belgium,Retail,2,151.52,0.05,287.89,200.8,87.09
+O100221,10114,2025-06-05,Dates 1kg,Pantry,Morocco,Supermarket,2,55.57,0.0,111.14,69.61,41.53
+O100415,10028,2025-06-07,Dates 1kg,Pantry,Morocco,Supermarket,1,52.12,0.1,46.91,31.3,15.61
+O100241,10017,2025-06-07,Milk 1L,Dairy,Morocco,Supermarket,2,8.65,0.2,13.84,8.22,5.62
+O100314,10006,2025-06-08,Couscous 5kg,Grains,Belgium,Retail,4,69.97,0.05,265.89,156.8,109.09
+O100199,10113,2025-06-10,Couscous 1kg,Grains,Morocco,Supermarket,2,18.25,0.0,36.5,21.38,15.12
+O100187,10077,2025-06-10,Couscous 5kg,Grains,Morocco,Supermarket,3,74.15,0.1,200.21,145.33,54.88
+O100133,10033,2025-06-10,Olive Oil 1L,Oils,Spain,Online,2,34.53,0.0,69.06,49.54,19.52
+O100151,10025,2025-06-11,Dates 1kg,Pantry,Morocco,Supermarket,4,55.82,0.05,212.12,154.36,57.76
+O100220,10018,2025-06-13,Cheese 500g,Dairy,Morocco,Retail,2,41.61,0.0,83.22,61.44,21.78
+O100293,10108,2025-06-13,Milk 1L,Dairy,Morocco,Retail,2,8.04,0.05,15.28,10.24,5.04
+O100057,10119,2025-06-14,Dates 1kg,Pantry,Morocco,Supermarket,4,58.02,0.2,185.66,125.44,60.22
+O100009,10073,2025-06-15,Couscous 5kg,Grains,Morocco,Online,3,70.69,0.0,212.07,159.62,52.45
+O100067,10014,2025-06-16,Cheese 500g,Dairy,Morocco,Supermarket,1,43.51,0.0,43.51,27.25,16.26
+O100394,10043,2025-06-16,Milk 1L,Dairy,Morocco,Supermarket,5,7.77,0.1,34.96,26.08,8.88
+O100316,10018,2025-06-18,Milk 1L,Dairy,Morocco,Supermarket,4,8.34,0.05,31.69,22.09,9.6
+O100250,10092,2025-06-18,Couscous 5kg,Grains,Morocco,Retail,2,70.2,0.0,140.4,90.66,49.74
+O100270,10077,2025-06-18,Honey 500g,Pantry,France,Supermarket,2,35.78,0.0,71.56,44.5,27.06
+O100135,10090,2025-06-18,Tomato Sauce,Canned Goods,Morocco,Online,1,11.07,0.0,11.07,7.41,3.66
+O100288,10016,2025-06-19,Couscous 1kg,Grains,Morocco,Online,1,19.23,0.0,19.23,13.63,5.6
+O100040,10016,2025-06-20,Olive Oil 1L,Oils,Morocco,Online,2,32.48,0.0,64.96,48.89,16.07
+O100146,10037,2025-06-20,Tomato Sauce,Canned Goods,France,Retail,1,11.44,0.0,11.44,7.23,4.21
+O100132,10057,2025-06-20,Couscous 1kg,Grains,Morocco,Supermarket,2,17.34,0.1,31.21,19.86,11.35
+O100481,10091,2025-06-20,Olive Oil 5L,Oils,Morocco,Supermarket,5,164.9,0.15,700.82,459.85,240.97
+O100459,10044,2025-06-21,Milk 1L,Dairy,France,Supermarket,2,7.99,0.05,15.18,8.91,6.27
+O100416,10066,2025-06-22,Olive Oil 1L,Oils,Morocco,Supermarket,1,36.64,0.1,32.98,20.48,12.5
+O100056,10054,2025-06-22,Olive Oil 1L,Oils,France,Supermarket,5,34.36,0.0,171.8,120.61,51.19
+O100171,10008,2025-06-22,Dates 1kg,Pantry,Morocco,Online,2,56.74,0.15,96.46,64.49,31.97
+O100188,10035,2025-06-23,Honey 500g,Pantry,Morocco,Supermarket,3,36.64,0.0,109.92,68.18,41.74
+O100186,10049,2025-06-24,Dates 1kg,Pantry,Morocco,Supermarket,2,52.82,0.0,105.64,67.97,37.67
+O100418,10022,2025-06-25,Tuna 160g,Canned Goods,Morocco,Supermarket,5,8.47,0.1,38.12,28.04,10.08
+O100391,10099,2025-06-25,Dates 1kg,Pantry,Morocco,Online,3,57.2,0.0,171.6,110.22,61.38
+O100019,10012,2025-06-25,Honey 500g,Pantry,Morocco,Online,3,36.52,0.0,109.56,81.89,27.67
+O100205,10080,2025-06-25,Olive Oil 1L,Oils,Belgium,Supermarket,5,35.19,0.0,175.95,103.69,72.26
+O100421,10069,2025-06-26,Olive Oil 1L,Oils,Morocco,Supermarket,4,34.13,0.1,122.87,74.37,48.5
+O100382,10109,2025-06-27,Couscous 1kg,Grains,Morocco,Retail,5,19.01,0.0,95.05,63.33,31.72
+O100248,10043,2025-06-28,Honey 500g,Pantry,Morocco,Online,2,41.73,0.0,83.46,60.89,22.57
+O100198,10038,2025-06-28,Flour 1kg,Baking,Morocco,Supermarket,1,10.42,0.05,9.9,5.83,4.07
+O100366,10060,2025-06-29,Flour 5kg,Baking,Spain,Supermarket,1,45.59,0.0,45.59,32.41,13.18
+O100292,10013,2025-06-29,Couscous 1kg,Grains,Morocco,Online,3,19.46,0.0,58.38,39.9,18.48
+O100211,10028,2025-06-30,Milk 1L,Dairy,France,Retail,1,7.7,0.05,7.31,4.41,2.9
+O100285,10105,2025-06-30,Olive Oil 5L,Oils,Spain,Retail,1,161.24,0.1,145.12,107.74,37.38
+O100304,10075,2025-07-01,Flour 5kg,Baking,Morocco,Retail,1,47.07,0.05,44.72,32.68,12.04
+O100100,10039,2025-07-01,Couscous 1kg,Grains,Spain,Supermarket,2,16.58,0.1,29.84,19.08,10.76
+O100478,10117,2025-07-01,Tuna 160g,Canned Goods,Morocco,Online,1,8.98,0.0,8.98,6.75,2.23
+O100474,10002,2025-07-01,Tomato Sauce,Canned Goods,Morocco,Supermarket,1,11.2,0.0,11.2,6.88,4.32
+O100499,10006,2025-07-02,Cheese 500g,Dairy,Morocco,Online,3,40.67,0.05,115.91,85.28,30.63
+O100426,10050,2025-07-02,Olive Oil 1L,Oils,Morocco,Supermarket,1,38.09,0.0,38.09,23.07,15.02
+O100176,10117,2025-07-02,Dates 1kg,Pantry,Morocco,Supermarket,3,59.01,0.2,141.62,87.85,53.77
+O100206,10097,2025-07-03,Flour 5kg,Baking,Belgium,Supermarket,1,48.82,0.15,41.5,27.82,13.68
+O100180,10094,2025-07-04,Couscous 1kg,Grains,Morocco,Supermarket,3,17.88,0.05,50.96,32.62,18.34
+O100207,10068,2025-07-04,Honey 500g,Pantry,Morocco,Online,4,38.03,0.0,152.12,111.65,40.47
+O100300,10080,2025-07-06,Milk 1L,Dairy,Morocco,Retail,3,7.87,0.0,23.61,14.41,9.2
+O100470,10111,2025-07-06,Olive Oil 5L,Oils,Morocco,Online,2,161.37,0.0,322.74,210.19,112.55
+O100443,10077,2025-07-07,Milk 1L,Dairy,Belgium,Supermarket,4,7.98,0.1,28.73,20.8,7.93
+O100398,10003,2025-07-08,Tomato Sauce,Canned Goods,Morocco,Online,2,12.13,0.0,24.26,16.95,7.31
+O100073,10098,2025-07-08,Olive Oil 1L,Oils,Morocco,Supermarket,1,36.79,0.15,31.27,19.93,11.34
+O100197,10084,2025-07-09,Flour 1kg,Baking,Morocco,Retail,4,11.0,0.15,37.4,26.07,11.33
+O100143,10019,2025-07-09,Honey 500g,Pantry,Morocco,Supermarket,3,35.57,0.0,106.71,76.24,30.47
+O100419,10099,2025-07-09,Olive Oil 5L,Oils,Morocco,Online,2,159.58,0.0,319.16,238.3,80.86
+O100122,10031,2025-07-09,Milk 1L,Dairy,Morocco,Supermarket,2,7.99,0.2,12.78,8.53,4.25
+O100085,10030,2025-07-10,Olive Oil 5L,Oils,Morocco,Supermarket,2,153.23,0.05,291.14,172.32,118.82
+O100165,10052,2025-07-10,Tuna 160g,Canned Goods,Morocco,Retail,3,9.0,0.0,27.0,17.93,9.07
+O100388,10061,2025-07-11,Tomato Sauce,Canned Goods,France,Supermarket,4,11.67,0.0,46.68,29.93,16.75
+O100452,10060,2025-07-11,Tomato Sauce,Canned Goods,Morocco,Supermarket,4,13.11,0.0,52.44,33.71,18.73
+O100469,10005,2025-07-13,Couscous 1kg,Grains,Morocco,Retail,2,18.73,0.1,33.71,24.9,8.81
+O100161,10026,2025-07-14,Dates 1kg,Pantry,Spain,Retail,2,55.05,0.05,104.59,64.46,40.13
+O100213,10102,2025-07-14,Flour 5kg,Baking,Morocco,Supermarket,1,50.49,0.0,50.49,37.72,12.77
+O100358,10077,2025-07-17,Couscous 5kg,Grains,Spain,Supermarket,1,75.17,0.15,63.89,41.96,21.93
+O100471,10056,2025-07-18,Dates 1kg,Pantry,Morocco,Retail,3,54.86,0.0,164.58,121.14,43.44
+O100439,10061,2025-07-18,Flour 5kg,Baking,Morocco,Supermarket,3,48.82,0.0,146.46,86.2,60.26
+O100335,10026,2025-07-18,Dates 1kg,Pantry,Morocco,Online,2,53.41,0.05,101.48,62.21,39.27
+O100414,10002,2025-07-18,Olive Oil 1L,Oils,Morocco,Online,3,35.48,0.1,95.8,57.45,38.35
+O100339,10077,2025-07-20,Honey 500g,Pantry,Belgium,Supermarket,2,38.19,0.05,72.56,44.83,27.73
+O100485,10094,2025-07-20,Couscous 5kg,Grains,Morocco,Supermarket,2,72.11,0.0,144.22,102.37,41.85
+O100083,10019,2025-07-21,Flour 1kg,Baking,Morocco,Online,4,11.53,0.0,46.12,27.16,18.96
+O100268,10017,2025-07-21,Dates 1kg,Pantry,Morocco,Retail,1,58.71,0.0,58.71,34.41,24.3
+O100136,10098,2025-07-21,Flour 5kg,Baking,France,Retail,4,46.04,0.0,184.16,133.1,51.06
+O100096,10018,2025-07-22,Tomato Sauce,Canned Goods,Morocco,Retail,2,11.79,0.0,23.58,14.08,9.5
+O100368,10071,2025-07-22,Couscous 5kg,Grains,Spain,Retail,1,68.24,0.15,58.0,41.59,16.41
+O100375,10069,2025-07-23,Honey 500g,Pantry,Belgium,Online,2,40.45,0.1,72.81,48.42,24.39
+O100321,10021,2025-07-23,Cheese 500g,Dairy,Morocco,Supermarket,4,38.91,0.05,147.86,97.94,49.92
+O100456,10109,2025-07-25,Honey 500g,Pantry,Morocco,Online,1,37.91,0.0,37.91,24.91,13.0
+O100409,10039,2025-07-25,Honey 500g,Pantry,Morocco,Online,3,40.09,0.05,114.26,81.62,32.64
+O100291,10079,2025-07-26,Tomato Sauce,Canned Goods,Morocco,Supermarket,1,11.53,0.1,10.38,6.76,3.62
+O100101,10060,2025-07-26,Honey 500g,Pantry,Morocco,Retail,2,36.06,0.1,64.91,43.45,21.46
+O100327,10075,2025-07-27,Tomato Sauce,Canned Goods,Morocco,Supermarket,3,11.36,0.0,34.08,23.9,10.18
+O100168,10066,2025-07-27,Dates 1kg,Pantry,Morocco,Supermarket,2,56.09,0.05,106.57,73.52,33.05
+O100244,10081,2025-07-29,Olive Oil 5L,Oils,Morocco,Supermarket,2,153.67,0.0,307.34,223.99,83.35
+O100092,10028,2025-07-30,Olive Oil 5L,Oils,Morocco,Retail,3,142.6,0.15,363.63,243.54,120.09
+O100037,10081,2025-08-01,Milk 1L,Dairy,Morocco,Supermarket,2,8.23,0.15,13.99,9.29,4.7
+O100044,10069,2025-08-02,Tomato Sauce,Canned Goods,Morocco,Retail,3,11.68,0.0,35.04,22.88,12.16
+O100473,10074,2025-08-02,Flour 5kg,Baking,Morocco,Online,2,45.4,0.0,90.8,56.97,33.83
+O100410,10085,2025-08-03,Couscous 5kg,Grains,France,Retail,1,77.33,0.05,73.46,44.31,29.15
+O100264,10048,2025-08-04,Dates 1kg,Pantry,Morocco,Supermarket,2,55.02,0.1,99.04,70.34,28.7
+O100011,10110,2025-08-04,Couscous 1kg,Grains,Morocco,Retail,3,17.53,0.0,52.59,33.55,19.04
+O100330,10007,2025-08-05,Milk 1L,Dairy,Morocco,Supermarket,1,8.17,0.1,7.35,5.15,2.2
+O100384,10065,2025-08-07,Tuna 160g,Canned Goods,Morocco,Supermarket,1,9.79,0.15,8.32,5.64,2.68
+O100098,10111,2025-08-07,Couscous 1kg,Grains,Spain,Online,3,16.73,0.15,42.66,27.76,14.9
+O100251,10035,2025-08-08,Couscous 1kg,Grains,Morocco,Supermarket,1,18.81,0.1,16.93,10.54,6.39
+O100344,10071,2025-08-08,Olive Oil 1L,Oils,Morocco,Retail,2,37.18,0.0,74.36,46.53,27.83
+O100462,10016,2025-08-09,Tuna 160g,Canned Goods,Morocco,Online,1,9.58,0.0,9.58,6.77,2.81
+O100212,10085,2025-08-10,Couscous 1kg,Grains,Morocco,Online,3,18.87,0.2,45.29,29.05,16.24
+O100267,10113,2025-08-11,Dates 1kg,Pantry,Spain,Online,5,54.58,0.0,272.9,203.64,69.26
+O100351,10060,2025-08-11,Olive Oil 1L,Oils,Morocco,Retail,3,33.88,0.0,101.64,61.04,40.6
+O100063,10040,2025-08-11,Milk 1L,Dairy,Morocco,Online,2,8.26,0.0,16.52,12.48,4.04
+O100030,10098,2025-08-11,Cheese 500g,Dairy,Morocco,Retail,2,41.64,0.05,79.12,56.23,22.89
+O100106,10005,2025-08-14,Flour 5kg,Baking,Morocco,Supermarket,1,49.15,0.0,49.15,30.4,18.75
+O100348,10020,2025-08-14,Tuna 160g,Canned Goods,Morocco,Supermarket,1,8.63,0.0,8.63,5.93,2.7
+O100464,10109,2025-08-15,Olive Oil 5L,Oils,Morocco,Retail,2,148.01,0.0,296.02,177.63,118.39
+O100262,10094,2025-08-17,Flour 5kg,Baking,Morocco,Retail,2,50.43,0.0,100.86,63.46,37.4
+O100175,10108,2025-08-17,Tomato Sauce,Canned Goods,Morocco,Retail,2,12.43,0.0,24.86,17.82,7.04
+O100125,10103,2025-08-21,Tuna 160g,Canned Goods,Morocco,Retail,4,9.3,0.0,37.2,26.01,11.19
+O100273,10084,2025-08-22,Cheese 500g,Dairy,France,Supermarket,3,38.76,0.15,98.84,67.75,31.09
+O100134,10031,2025-08-23,Cheese 500g,Dairy,Spain,Retail,4,46.19,0.05,175.52,129.91,45.61
+O100276,10098,2025-08-23,Olive Oil 5L,Oils,Morocco,Online,5,145.7,0.05,692.07,404.52,287.55
+O100237,10096,2025-08-25,Flour 5kg,Baking,Morocco,Supermarket,2,46.74,0.0,93.48,66.06,27.42
+O100493,10118,2025-08-25,Tomato Sauce,Canned Goods,Morocco,Online,2,11.42,0.0,22.84,14.92,7.92
+O100308,10009,2025-08-25,Cheese 500g,Dairy,Morocco,Online,2,40.6,0.0,81.2,48.81,32.39
+O100397,10089,2025-08-25,Tuna 160g,Canned Goods,Spain,Retail,1,9.63,0.0,9.63,7.16,2.47
+O100108,10077,2025-08-26,Milk 1L,Dairy,Morocco,Online,4,8.27,0.0,33.08,21.75,11.33
+O100200,10109,2025-08-26,Couscous 5kg,Grains,Morocco,Retail,1,66.42,0.0,66.42,43.98,22.44
+O100369,10070,2025-08-26,Flour 1kg,Baking,Morocco,Supermarket,4,10.95,0.0,43.8,25.9,17.9
+O100014,10074,2025-08-27,Tuna 160g,Canned Goods,Belgium,Supermarket,5,9.11,0.0,45.55,26.71,18.84
+O100380,10089,2025-08-31,Cheese 500g,Dairy,Morocco,Online,1,40.72,0.0,40.72,25.02,15.7
+O100029,10005,2025-08-31,Tomato Sauce,Canned Goods,Spain,Supermarket,4,11.08,0.05,42.1,26.17,15.93
+O100283,10016,2025-09-01,Honey 500g,Pantry,Morocco,Supermarket,2,40.11,0.0,80.22,48.61,31.61
+O100284,10120,2025-09-01,Flour 5kg,Baking,Morocco,Supermarket,2,52.9,0.1,95.22,63.67,31.55
+O100441,10033,2025-09-02,Couscous 1kg,Grains,Belgium,Retail,2,18.94,0.1,34.09,24.43,9.66
+O100355,10039,2025-09-04,Olive Oil 1L,Oils,Morocco,Supermarket,2,36.27,0.0,72.54,54.32,18.22
+O100329,10075,2025-09-04,Olive Oil 5L,Oils,Morocco,Online,1,153.92,0.05,146.22,100.29,45.93
+O100013,10045,2025-09-04,Cheese 500g,Dairy,Morocco,Supermarket,3,45.46,0.1,122.74,75.28,47.46
+O100263,10060,2025-09-05,Milk 1L,Dairy,France,Online,1,8.21,0.0,8.21,5.85,2.36
+O100004,10006,2025-09-05,Couscous 5kg,Grains,Morocco,Retail,1,71.44,0.1,64.3,45.07,19.23
+O100460,10062,2025-09-07,Tomato Sauce,Canned Goods,Morocco,Retail,3,12.45,0.05,35.48,26.7,8.78
+O100395,10024,2025-09-08,Milk 1L,Dairy,Morocco,Online,2,8.72,0.0,17.44,10.96,6.48
+O100245,10052,2025-09-09,Olive Oil 5L,Oils,Morocco,Supermarket,4,147.98,0.05,562.32,333.14,229.18
+O100169,10015,2025-09-11,Couscous 5kg,Grains,Morocco,Supermarket,3,75.09,0.0,225.27,148.78,76.49
+O100461,10067,2025-09-15,Cheese 500g,Dairy,Morocco,Supermarket,1,40.78,0.0,40.78,25.69,15.09
+O100345,10085,2025-09-15,Olive Oil 5L,Oils,Morocco,Retail,3,138.13,0.0,414.39,287.75,126.64
+O100386,10040,2025-09-16,Flour 5kg,Baking,France,Online,3,50.41,0.1,136.11,88.9,47.21
+O100413,10078,2025-09-16,Cheese 500g,Dairy,Morocco,Supermarket,5,45.98,0.15,195.41,139.91,55.5
+O100356,10053,2025-09-17,Tomato Sauce,Canned Goods,Morocco,Supermarket,3,12.01,0.05,34.23,20.84,13.39
+O100498,10018,2025-09-17,Dates 1kg,Pantry,France,Retail,3,59.66,0.0,178.98,114.17,64.81
+O100379,10064,2025-09-17,Flour 1kg,Baking,Morocco,Supermarket,3,11.74,0.0,35.22,23.81,11.41
+O100420,10119,2025-09-17,Milk 1L,Dairy,France,Retail,2,8.66,0.0,17.32,13.08,4.24
+O100361,10029,2025-09-17,Olive Oil 1L,Oils,Morocco,Supermarket,4,33.36,0.0,133.44,91.77,41.67
+O100020,10060,2025-09-17,Honey 500g,Pantry,Morocco,Supermarket,1,35.28,0.0,35.28,26.3,8.98
+O100444,10079,2025-09-17,Milk 1L,Dairy,Morocco,Supermarket,3,8.71,0.15,22.21,15.17,7.04
+O100466,10025,2025-09-18,Tuna 160g,Canned Goods,France,Retail,2,9.86,0.0,19.72,14.94,4.78
+O100412,10050,2025-09-20,Dates 1kg,Pantry,Morocco,Retail,2,55.52,0.1,99.94,70.22,29.72
+O100246,10094,2025-09-23,Milk 1L,Dairy,France,Supermarket,2,8.4,0.0,16.8,12.35,4.45
+O100194,10047,2025-09-25,Milk 1L,Dairy,Morocco,Online,1,8.6,0.0,8.6,6.31,2.29
+O100295,10032,2025-09-27,Flour 5kg,Baking,Belgium,Supermarket,1,51.0,0.0,51.0,34.27,16.73
+O100315,10028,2025-09-27,Dates 1kg,Pantry,Morocco,Online,2,52.78,0.1,95.0,67.69,27.31
+O100172,10110,2025-09-27,Dates 1kg,Pantry,Morocco,Online,1,55.71,0.0,55.71,41.55,14.16
+O100343,10039,2025-09-28,Tomato Sauce,Canned Goods,Morocco,Retail,2,12.27,0.0,24.54,14.86,9.68
+O100192,10030,2025-09-28,Cheese 500g,Dairy,Morocco,Supermarket,1,44.16,0.1,39.74,26.43,13.31
+O100127,10052,2025-09-29,Cheese 500g,Dairy,Spain,Supermarket,1,40.14,0.05,38.13,27.24,10.89
+O100294,10005,2025-09-30,Flour 1kg,Baking,Morocco,Supermarket,2,11.71,0.1,21.08,12.81,8.27
+O100131,10103,2025-10-01,Milk 1L,Dairy,Morocco,Supermarket,3,8.01,0.1,21.63,13.48,8.15
+O100053,10112,2025-10-02,Olive Oil 1L,Oils,Morocco,Supermarket,3,33.54,0.15,85.53,56.35,29.18
+O100079,10039,2025-10-02,Couscous 5kg,Grains,Morocco,Supermarket,2,75.96,0.0,151.92,98.17,53.75
+O100080,10094,2025-10-02,Cheese 500g,Dairy,France,Supermarket,1,39.29,0.0,39.29,24.03,15.26
+O100236,10092,2025-10-03,Tuna 160g,Canned Goods,Morocco,Retail,4,9.69,0.0,38.76,26.36,12.4
+O100253,10040,2025-10-03,Tomato Sauce,Canned Goods,Morocco,Supermarket,2,11.06,0.05,21.01,15.93,5.08
+O100411,10086,2025-10-04,Flour 1kg,Baking,Morocco,Online,2,11.81,0.0,23.62,16.13,7.49
+O100352,10017,2025-10-05,Flour 5kg,Baking,Spain,Retail,2,46.89,0.0,93.78,63.62,30.16
+O100129,10052,2025-10-05,Flour 1kg,Baking,Morocco,Supermarket,3,10.47,0.0,31.41,20.92,10.49
+O100346,10079,2025-10-07,Flour 1kg,Baking,Morocco,Retail,2,11.6,0.15,19.72,13.07,6.65
+O100174,10099,2025-10-08,Tomato Sauce,Canned Goods,Belgium,Supermarket,3,11.11,0.05,31.66,19.24,12.42
+O100120,10098,2025-10-09,Couscous 5kg,Grains,Morocco,Supermarket,2,68.61,0.0,137.22,95.72,41.5
+O100233,10071,2025-10-09,Dates 1kg,Pantry,Spain,Retail,2,56.42,0.15,95.91,64.64,31.27
+O100077,10104,2025-10-10,Honey 500g,Pantry,Morocco,Retail,1,39.42,0.1,35.48,21.65,13.83
+O100000,10073,2025-10-11,Milk 1L,Dairy,Morocco,Retail,2,8.78,0.0,17.56,13.28,4.28
+O100048,10040,2025-10-11,Olive Oil 1L,Oils,Morocco,Supermarket,2,35.29,0.0,70.58,47.75,22.83
+O100333,10024,2025-10-11,Olive Oil 5L,Oils,Morocco,Supermarket,1,162.66,0.0,162.66,104.19,58.47
+O100424,10019,2025-10-12,Flour 1kg,Baking,Morocco,Supermarket,2,11.71,0.0,23.42,16.98,6.44
+O100061,10107,2025-10-12,Olive Oil 5L,Oils,Morocco,Supermarket,4,144.66,0.05,549.71,331.63,218.08
+O100405,10047,2025-10-13,Cheese 500g,Dairy,Morocco,Retail,4,45.46,0.0,181.84,131.39,50.45
+O100203,10068,2025-10-15,Flour 5kg,Baking,Morocco,Online,3,53.28,0.2,127.87,75.14,52.73
+O100071,10032,2025-10-16,Cheese 500g,Dairy,France,Supermarket,2,45.33,0.05,86.13,51.69,34.44
+O100423,10119,2025-10-17,Cheese 500g,Dairy,Morocco,Online,2,44.1,0.15,74.97,54.29,20.68
+O100219,10112,2025-10-19,Flour 1kg,Baking,Morocco,Supermarket,3,11.82,0.0,35.46,22.33,13.13
+O100305,10096,2025-10-19,Tomato Sauce,Canned Goods,Morocco,Retail,4,12.55,0.05,47.69,32.17,15.52
+O100024,10059,2025-10-19,Milk 1L,Dairy,Morocco,Supermarket,3,7.67,0.0,23.01,14.66,8.35
+O100147,10021,2025-10-20,Milk 1L,Dairy,Belgium,Supermarket,2,7.75,0.0,15.5,9.37,6.13
+O100003,10052,2025-10-20,Tomato Sauce,Canned Goods,Morocco,Online,1,11.55,0.05,10.97,8.06,2.91
+O100184,10102,2025-10-21,Tuna 160g,Canned Goods,Morocco,Supermarket,4,8.3,0.0,33.2,24.66,8.54
+O100103,10113,2025-10-24,Tomato Sauce,Canned Goods,Morocco,Supermarket,2,12.26,0.2,19.62,13.52,6.1
+O100225,10095,2025-10-25,Couscous 1kg,Grains,Morocco,Retail,1,18.22,0.0,18.22,12.74,5.48
+O100091,10072,2025-10-27,Olive Oil 5L,Oils,Morocco,Retail,2,164.91,0.0,329.82,215.12,114.7
+O100078,10027,2025-10-28,Couscous 5kg,Grains,Morocco,Supermarket,2,76.86,0.0,153.72,100.07,53.65
+O100279,10055,2025-10-29,Tuna 160g,Canned Goods,Morocco,Retail,2,9.28,0.05,17.63,12.95,4.68
+O100408,10093,2025-10-29,Flour 5kg,Baking,Morocco,Retail,4,53.3,0.05,202.54,133.59,68.95
+O100269,10100,2025-10-30,Tuna 160g,Canned Goods,Morocco,Online,2,8.37,0.15,14.23,10.65,3.58
+O100157,10063,2025-10-30,Dates 1kg,Pantry,Morocco,Supermarket,1,52.78,0.05,50.14,34.17,15.97
+O100340,10071,2025-10-30,Cheese 500g,Dairy,Morocco,Online,2,40.49,0.05,76.93,45.79,31.14
+O100142,10039,2025-11-01,Flour 1kg,Baking,Morocco,Supermarket,1,10.13,0.05,9.62,7.3,2.32
+O100429,10054,2025-11-01,Olive Oil 5L,Oils,Morocco,Supermarket,3,153.14,0.1,413.48,289.87,123.61
+O100310,10111,2025-11-02,Milk 1L,Dairy,Morocco,Online,1,8.43,0.2,6.74,4.94,1.8
+O100496,10090,2025-11-02,Milk 1L,Dairy,Morocco,Online,1,7.68,0.0,7.68,5.27,2.41
+O100069,10034,2025-11-03,Olive Oil 5L,Oils,Belgium,Supermarket,1,158.91,0.0,158.91,103.33,55.58
+O100457,10073,2025-11-03,Flour 5kg,Baking,Morocco,Online,3,50.62,0.0,151.86,88.93,62.93
+O100043,10005,2025-11-05,Flour 5kg,Baking,Morocco,Retail,3,49.86,0.0,149.58,93.58,56.0
+O100303,10008,2025-11-05,Couscous 5kg,Grains,Morocco,Supermarket,1,76.15,0.0,76.15,54.9,21.25
+O100217,10087,2025-11-05,Flour 1kg,Baking,Morocco,Retail,4,10.98,0.1,39.53,28.67,10.86
+O100442,10099,2025-11-08,Honey 500g,Pantry,Morocco,Online,4,39.96,0.1,143.86,107.64,36.22
+O100446,10092,2025-11-09,Olive Oil 1L,Oils,Spain,Supermarket,2,32.77,0.05,62.26,38.91,23.35
+O100289,10120,2025-11-11,Couscous 5kg,Grains,Morocco,Retail,2,77.67,0.05,147.57,106.81,40.76
+O100400,10102,2025-11-11,Couscous 5kg,Grains,Morocco,Supermarket,2,74.78,0.0,149.56,90.9,58.66
+O100094,10086,2025-11-13,Flour 5kg,Baking,Morocco,Retail,2,48.24,0.0,96.48,63.45,33.03
+O100297,10094,2025-11-14,Dates 1kg,Pantry,Morocco,Online,3,55.87,0.0,167.61,121.72,45.89
+O100082,10062,2025-11-15,Dates 1kg,Pantry,Morocco,Online,1,52.79,0.05,50.15,31.7,18.45
+O100313,10099,2025-11-15,Couscous 1kg,Grains,Morocco,Online,3,16.69,0.0,50.07,34.08,15.99
+O100137,10016,2025-11-15,Flour 1kg,Baking,Morocco,Retail,4,10.74,0.0,42.96,26.99,15.97
+O100337,10058,2025-11-16,Cheese 500g,Dairy,Morocco,Supermarket,3,40.74,0.0,122.22,84.22,38.0
+O100296,10019,2025-11-16,Olive Oil 1L,Oils,Morocco,Supermarket,5,37.71,0.0,188.55,137.18,51.37
+O100401,10048,2025-11-17,Honey 500g,Pantry,Belgium,Supermarket,4,40.58,0.05,154.2,104.91,49.29
+O100028,10054,2025-11-18,Olive Oil 5L,Oils,Morocco,Supermarket,2,154.79,0.0,309.58,182.37,127.21
+O100434,10007,2025-11-18,Flour 1kg,Baking,Morocco,Supermarket,1,10.54,0.15,8.96,6.63,2.33
+O100475,10036,2025-11-18,Couscous 1kg,Grains,Morocco,Retail,1,16.86,0.1,15.17,9.61,5.56
+O100349,10063,2025-11-19,Olive Oil 5L,Oils,Morocco,Supermarket,2,150.04,0.0,300.08,183.87,116.21
+O100440,10012,2025-11-19,Flour 1kg,Baking,Morocco,Supermarket,1,11.26,0.05,10.7,6.32,4.38
+O100249,10108,2025-11-20,Olive Oil 5L,Oils,Morocco,Online,3,156.5,0.0,469.5,307.68,161.82
+O100238,10061,2025-11-21,Tuna 160g,Canned Goods,Morocco,Online,3,8.6,0.0,25.8,19.48,6.32
+O100026,10043,2025-11-21,Olive Oil 5L,Oils,Morocco,Online,2,141.4,0.0,282.8,199.31,83.49
+O100298,10028,2025-11-22,Milk 1L,Dairy,Morocco,Supermarket,1,7.61,0.05,7.23,5.46,1.77
+O100226,10113,2025-11-23,Couscous 5kg,Grains,Morocco,Supermarket,1,70.43,0.05,66.91,47.46,19.45
+O100086,10018,2025-11-23,Cheese 500g,Dairy,Morocco,Retail,3,39.94,0.1,107.84,71.67,36.17
+O100124,10075,2025-11-24,Tuna 160g,Canned Goods,France,Supermarket,2,8.38,0.1,15.08,10.51,4.57
+O100114,10112,2025-11-25,Dates 1kg,Pantry,Morocco,Supermarket,5,57.58,0.0,287.9,190.63,97.27
+O100035,10083,2025-11-26,Flour 5kg,Baking,Morocco,Supermarket,4,52.12,0.0,208.48,128.59,79.89
+O100497,10045,2025-11-27,Milk 1L,Dairy,Spain,Supermarket,2,8.31,0.05,15.79,10.03,5.76
+O100487,10016,2025-11-27,Cheese 500g,Dairy,Morocco,Supermarket,2,41.32,0.05,78.51,53.25,25.26
+O100059,10090,2025-11-28,Flour 1kg,Baking,Morocco,Supermarket,2,11.4,0.0,22.8,14.9,7.9
+O100272,10074,2025-11-29,Couscous 5kg,Grains,Morocco,Online,1,78.08,0.15,66.37,48.4,17.97
+O100140,10020,2025-11-30,Dates 1kg,Pantry,Morocco,Retail,1,57.31,0.1,51.58,32.1,19.48
+O100153,10074,2025-11-30,Dates 1kg,Pantry,Morocco,Retail,1,57.89,0.05,55.0,37.08,17.92
+O100118,10004,2025-11-30,Tomato Sauce,Canned Goods,Morocco,Retail,2,12.39,0.0,24.78,17.94,6.84
+O100111,10052,2025-12-01,Olive Oil 1L,Oils,Belgium,Supermarket,2,34.7,0.0,69.4,41.04,28.36
+O100008,10015,2025-12-01,Tuna 160g,Canned Goods,Morocco,Supermarket,2,8.5,0.0,17.0,10.07,6.93
+O100353,10018,2025-12-01,Couscous 1kg,Grains,Morocco,Supermarket,4,19.69,0.0,78.76,46.35,32.41
+O100023,10071,2025-12-02,Couscous 1kg,Grains,France,Supermarket,2,18.52,0.2,29.63,19.11,10.52
+O100495,10089,2025-12-03,Honey 500g,Pantry,Morocco,Retail,2,39.18,0.0,78.36,47.96,30.4
+O100489,10055,2025-12-04,Flour 1kg,Baking,Morocco,Retail,2,10.63,0.0,21.26,13.35,7.91
+O100066,10048,2025-12-04,Dates 1kg,Pantry,Morocco,Online,4,60.28,0.05,229.06,164.38,64.68
+O100195,10042,2025-12-05,Tuna 160g,Canned Goods,Morocco,Online,2,9.4,0.2,15.04,9.13,5.91
+O100257,10054,2025-12-06,Honey 500g,Pantry,Spain,Retail,1,36.31,0.1,32.68,19.52,13.16
+O100095,10089,2025-12-07,Flour 5kg,Baking,Morocco,Online,2,47.98,0.0,95.96,65.47,30.49
+O100178,10094,2025-12-07,Tomato Sauce,Canned Goods,Morocco,Retail,1,12.18,0.1,10.96,6.95,4.01
+O100110,10019,2025-12-08,Couscous 5kg,Grains,Morocco,Online,4,67.76,0.0,271.04,197.93,73.11
+O100450,10044,2025-12-10,Cheese 500g,Dairy,Morocco,Retail,5,43.79,0.1,197.06,142.4,54.66
+O100476,10085,2025-12-11,Cheese 500g,Dairy,Belgium,Supermarket,3,39.16,0.05,111.61,84.6,27.01
+O100058,10107,2025-12-12,Tomato Sauce,Canned Goods,Morocco,Online,2,12.64,0.0,25.28,17.22,8.06
+O100119,10016,2025-12-13,Cheese 500g,Dairy,Belgium,Supermarket,2,39.32,0.0,78.64,51.81,26.83
+O100240,10111,2025-12-13,Dates 1kg,Pantry,Morocco,Online,3,55.27,0.0,165.81,109.19,56.62
+O100490,10069,2025-12-13,Tuna 160g,Canned Goods,France,Supermarket,3,9.17,0.0,27.51,20.06,7.45
+O100491,10080,2025-12-14,Couscous 5kg,Grains,Morocco,Online,2,76.61,0.15,130.24,92.04,38.2
+O100190,10060,2025-12-14,Milk 1L,Dairy,Belgium,Online,1,8.46,0.15,7.19,5.34,1.85
+O100154,10084,2025-12-17,Tuna 160g,Canned Goods,Morocco,Online,3,9.77,0.2,23.45,15.09,8.36
+O100173,10015,2025-12-18,Dates 1kg,Pantry,Morocco,Supermarket,2,52.39,0.0,104.78,62.57,42.21
+O100363,10040,2025-12-18,Olive Oil 5L,Oils,Morocco,Supermarket,1,157.3,0.05,149.44,105.25,44.19
+O100102,10081,2025-12-18,Olive Oil 1L,Oils,Morocco,Supermarket,4,33.38,0.05,126.84,93.62,33.22
+O100407,10120,2025-12-19,Flour 5kg,Baking,Morocco,Supermarket,2,49.02,0.05,93.14,60.89,32.25
+O100193,10047,2025-12-20,Dates 1kg,Pantry,Morocco,Retail,3,54.25,0.0,162.75,100.83,61.92
+O100223,10074,2025-12-20,Tuna 160g,Canned Goods,France,Online,4,8.51,0.0,34.04,20.78,13.26
+O100396,10040,2025-12-22,Couscous 1kg,Grains,Morocco,Online,1,18.96,0.15,16.12,9.57,6.55
+O100445,10083,2025-12-22,Flour 1kg,Baking,Morocco,Supermarket,2,11.55,0.1,20.79,13.71,7.08
+O100113,10074,2025-12-23,Olive Oil 5L,Oils,Morocco,Online,4,163.47,0.0,653.88,472.91,180.97
+O100208,10077,2025-12-23,Honey 500g,Pantry,Morocco,Online,1,37.02,0.0,37.02,24.08,12.94
+O100117,10094,2025-12-23,Honey 500g,Pantry,Morocco,Online,1,35.3,0.0,35.3,20.88,14.42
+O100156,10041,2025-12-24,Cheese 500g,Dairy,Morocco,Online,4,40.92,0.1,147.31,94.37,52.94
+O100036,10036,2025-12-24,Couscous 1kg,Grains,Morocco,Online,2,18.89,0.1,34.0,22.14,11.86
+O100031,10108,2025-12-25,Flour 1kg,Baking,Morocco,Supermarket,2,11.14,0.0,22.28,16.11,6.17
+O100042,10030,2025-12-25,Cheese 500g,Dairy,Morocco,Supermarket,5,39.18,0.0,195.9,124.36,71.54
+O100179,10078,2025-12-26,Tuna 160g,Canned Goods,Morocco,Online,4,9.57,0.0,38.28,24.41,13.87
+O100155,10050,2025-12-27,Olive Oil 1L,Oils,France,Supermarket,1,34.8,0.1,31.32,19.77,11.55
+O100081,10115,2025-12-28,Flour 1kg,Baking,Spain,Retail,1,11.41,0.0,11.41,7.42,3.99
+O100216,10014,2025-12-28,Cheese 500g,Dairy,Morocco,Retail,4,42.45,0.0,169.8,108.1,61.7
+O100307,10100,2025-12-28,Flour 5kg,Baking,Morocco,Supermarket,1,52.13,0.1,46.92,27.63,19.29
+O100027,10066,2025-12-28,Olive Oil 5L,Oils,Morocco,Retail,1,138.45,0.2,110.76,75.9,34.86
+O100290,10082,2025-12-29,Olive Oil 1L,Oils,Spain,Supermarket,2,37.33,0.05,70.93,46.92,24.01
+O100109,10016,2025-12-29,Tomato Sauce,Canned Goods,Spain,Supermarket,5,11.13,0.05,52.87,33.54,19.33
+O100054,10022,2025-12-29,Milk 1L,Dairy,Morocco,Online,2,7.45,0.0,14.9,8.99,5.91
+O100260,10069,2025-12-31,Tomato Sauce,Canned Goods,Morocco,Supermarket,1,11.48,0.0,11.48,7.65,3.83
+O100425,10056,2025-12-31,Tuna 160g,Canned Goods,Morocco,Supermarket,4,9.71,0.15,33.01,21.75,11.26

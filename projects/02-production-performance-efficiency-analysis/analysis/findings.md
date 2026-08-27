@@ -4,20 +4,33 @@
 
 The 500 synthetic production records contain 550,695 kg of actual production against 586,622 kg planned, leaving a production gap of **−35,927 kg**. Overall yield is **92.07%**, waste rate is **3.06%**, and machine utilization is **94.27%**.
 
+### OEE decomposition
+
+The dataset supports an Overall Equipment Effectiveness (OEE) calculation:
+
+| Component | Formula | Result |
+|---|---|---|
+| **Availability** | Operating Time / Available Time | **94.27%** |
+| **Performance** | Actual Production / Planned Production | **93.88%** |
+| **Quality** | Good Output / Actual Production | **97.50%** |
+| **OEE** | Availability × Performance × Quality | **86.29%** |
+
+OEE loss of 13.71% means roughly 13.7% of planned good output is lost. The largest loss driver is Performance (the gap between actual and planned output), followed by Availability (downtime), with Quality being the smallest loss at 2.50%.
+
 ## Machine performance
 
-| Machine | Efficiency | Yield | Waste Rate | Utilization | Downtime |
-|---|---:|---:|---:|---:|---:|
-| M01 | 94.26% | 91.97% | 3.07% | 95.40% | 3,090.0 min |
-| M02 | **94.60%** | 92.12% | 3.02% | 94.68% | 3,014.0 min |
-| M03 | **93.18%** | 92.05% | 2.98% | **92.27%** | **4,823.5 min** |
-| M04 | 93.45% | 92.11% | **3.19%** | 94.75% | 2,826.3 min |
+| Machine | Efficiency | Yield | Waste Rate | Utilization | Downtime | OEE |
+|---|---|---:|---:|---:|---:|---:|
+| M01 | 94.26% | 91.97% | 3.07% | 95.40% | 3,090.0 min | 87.7% |
+| M02 | **94.60%** | 92.12% | 3.02% | 94.68% | 3,014.0 min | 87.4% |
+| M03 | **93.18%** | 92.05% | 2.98% | **92.27%** | **4,823.5 min** | **83.8%** |
+| M04 | 93.45% | 92.11% | **3.19%** | 94.75% | 2,826.3 min | 86.3% |
 
 ### Finding
 
-M03 is the weakest machine on efficiency and utilization and has substantially higher downtime than the other machines. It is therefore the first candidate for operational investigation. However, the analysis does **not** prove that downtime is the root cause.
+M03 is the weakest machine on efficiency, utilization, downtime, and OEE (83.8% vs. 87.4% for M02). M03's OEE loss represents approximately 25,227 kg of potential good output — the largest machine-level loss. The analysis does **not** prove that downtime is the root cause.
 
-M04 presents a different pattern: utilization is relatively high, but waste rate is the highest. This suggests that machine usage and material/process losses should be treated as separate questions.
+M04 presents a different pattern: utilization is relatively high, but waste rate is the highest. Its OEE (86.3%) is closer to average. This suggests that machine usage and material/process losses should be treated as separate questions.
 
 ## Product performance
 

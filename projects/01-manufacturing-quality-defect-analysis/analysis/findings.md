@@ -29,10 +29,20 @@ Noir Extrême has the highest product-level defect rate in the dashboard, while 
 
 ## Quality parameters
 
-- **Fat percentage:** no obvious positive relationship with defect rate is visible in the exploratory scatter plot.
+- **Fat percentage:** no obvious positive relationship with defect rate is visible in the exploratory scatter plot. A quantitative correlation coefficient would be needed to confirm this visually assessed absence of relationship.
 - **Viscosity:** no obvious linear relationship with defect rate is visible.
 - **Fineness:** no obvious linear relationship with defect rate is visible.
-- **Humidity:** the visual suggests a possible relationship in parts of the dataset, but the pattern is not sufficient to establish a root cause.
+- **Humidity:** the visual suggests a possible relationship in parts of the dataset, but the pattern is not sufficient to establish a root cause. Statistical testing would be required before treating humidity as a meaningful driver.
+
+## Scope for deeper analysis
+
+The current analysis identifies **M03 as the primary investigation priority** based on defect-rate segmentation. With additional data, the analysis could be extended to:
+
+- **Cost of quality:** assign a cost per defective unit (scrap, rework, or customer-return cost) to quantify the financial impact of the elevated defect rate on M03.
+- **OEE calculation:** if downtime and planned-vs-actual production data were available, the same dataset structure could support an OEE decomposition (Availability × Performance × Quality) to separate machine availability losses from quality losses.
+- **Statistical testing:** correlation coefficients (Pearson or Spearman) for the quality parameters would replace visual assessment with quantified evidence.
+
+The available variables are sufficient to prioritize an investigation, but not to identify a definitive root cause or quantify its cost.
 
 ## Business interpretation
 

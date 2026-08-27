@@ -38,9 +38,11 @@ The dataset contains **460 batch-level production records** covering five chocol
 
 Full definitions are available in [`data/data-dictionary.md`](data/data-dictionary.md).
 
-## Data quality
+### Data note
 
-The source dataset contains **0 missing values and 0 duplicate rows**. The analysis uses the batch-level records directly after validation.
+The source dataset is available as [`data/production_data.csv`](data/production_data.csv) (460 batch-level records). The Power BI dashboard was built from this source file. The dataset is synthetic and was created specifically for this portfolio project.
+
+> **Dashboard screenshot note:** The preview image in the assets folder shows a filtered view (a subset of months) for visual clarity. The full dataset covers the entire production period and is available in the CSV file.
 
 ## KPIs
 
@@ -98,11 +100,15 @@ The exploratory visuals show no obvious positive relationship between defect rat
 
 ## Recommendations
 
-1. Prioritize M03 for calibration, maintenance and operating-condition review.
+1. **Prioritize M03 for calibration, maintenance and operating-condition review.** M03 has the highest overall defect rate at **1.84%** and the highest rate for four of the five products. In a real production environment, the next step would be to quantify the cost of these additional defects — scrap cost, rework time, and any customer-return exposure — to prioritize the investigation against other operational demands.
+
 2. Compare machines under equivalent product conditions.
+
 3. Review M03 performance by product rather than relying only on aggregate rates.
+
 4. Investigate production-time and operator effects.
-5. In a real production environment, enrich the dataset with maintenance events, downtime, temperature, process settings and shift information.
+
+5. In a real production environment, enrich the dataset with maintenance events, downtime, temperature, process settings and shift information. With downtime data available, the same dataset could support an **OEE (Overall Equipment Effectiveness)** calculation using Availability (operating time / available time), Performance (actual / planned output), and Quality (good units / total output).
 
 ## Tools
 

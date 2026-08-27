@@ -13,9 +13,9 @@ A food business needs to understand where revenue and profit come from, which pr
 - Measure revenue, cost, profit, margin, orders, and units sold.
 - Identify the strongest products and categories.
 - Compare regional revenue, profit, and margins.
-- Evaluate sales-channel performance.
-- Analyze monthly sales and profitability trends.
-- Compare promoted and non-promoted transactions.
+- Evaluates sales-channel performance.
+- Analyzes monthly sales and profitability trends.
+- Compare promoted and non-promoted transactions, including category-level controls.
 - Document data-quality issues and the analytical treatment applied.
 - Communicate findings through reproducible SQL and Power BI reporting.
 
@@ -49,6 +49,10 @@ The source contains **one completely blank record**. The source file is preserve
 
 This keeps the source reproducible while preventing the blank record from affecting business KPIs.
 
+### Data format note
+
+The source CSV uses UTF-8 encoding with a BOM (byte order mark) on the `Date` column. This is visible as `\ufeffDate` in some parsers. The SQL analysis scripts handle this correctly via the column name as imported into SQLite. If the CSV is re-imported in tools that are sensitive to BOMs, the `Date` column may need to be renamed.
+
 ## Methodology
 
 **Data validation → SQL analysis → KPI calculation → Power BI visualization → business interpretation**
@@ -58,13 +62,16 @@ The SQL layer reproduces the main analytical cuts independently of the dashboard
 ## Baseline KPIs
 
 | KPI | Value |
-|---|---:|
-| Orders | **1,001** |
+|---|---|
+| Orders (valid) | **1,000** |
 | Units sold | **105,204** |
 | Revenue | **2,816,965.08 MAD** |
 | Cost | **1,922,505.27 MAD** |
 | Profit | **894,447.95 MAD** |
 | Profit margin | **31.75%** |
+| Avg. margin per unit | **8.50 MAD** |
+
+Orders counts only valid orders (1 blank record excluded). Units sold, revenue, cost, profit, and margin are calculated from the same 1,000 valid orders.
 
 ## Key findings
 
@@ -76,7 +83,7 @@ The SQL layer reproduces the main analytical cuts independently of the dashboard
 - **Supermarket** is the strongest sales channel, generating **951,074.37 MAD** revenue and **304,255.02 MAD** profit.
 - **May** is the strongest month with **328,424.62 MAD** revenue and **102,600.24 MAD** profit.
 - **September** is the weakest month with **166,427.16 MAD** revenue and **52,296.03 MAD** profit.
-- Promotional transactions show a lower observed margin (**27.78%**) than non-promotional transactions (**33.02%**). This is an association in the observed data, not proof that promotions caused the lower margin.
+- Promotional transactions show a lower observed margin (**27.78%**) than non-promotional transactions (**33.02%**). A category-level control (see `sql/09_promotion_by_category.sql`) confirms this gap is consistent across all categories. This is an association in the observed data, not proof that promotions caused the lower margin.
 
 ## Business recommendations
 
@@ -88,7 +95,7 @@ The SQL layer reproduces the main analytical cuts independently of the dashboard
 
 ## SQL analysis
 
-The SQL layer is written for **SQLite** and is organized into eight reproducible analyses:
+The SQL layer is written for **SQLite** and is organized into nine reproducible analyses:
 
 ```text
 sql/
@@ -99,7 +106,8 @@ sql/
 ├── 05_regional_analysis.sql
 ├── 06_sales_channel_analysis.sql
 ├── 07_monthly_trends.sql
-└── 08_promotion_analysis.sql
+├── 08_promotion_analysis.sql
+└── 09_promotion_by_category.sql
 ```
 
 The scripts demonstrate aggregation, grouping, calculated margins, ranking-oriented outputs, date-based trend analysis, promotion comparison, NULL/blank handling, and division-by-zero protection with `NULLIF`.
